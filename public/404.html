@@ -1,0 +1,29 @@
+<!doctype html>
+<!--
+  GitHub Pages has no server-side router, so a direct visit or refresh on
+  a path like /privacy serves this 404.html instead of the SPA. This
+  redirects that request back to / with the original path encoded in the
+  query string; the script in index.html reads it back out and restores
+  the real URL via history.replaceState before React Router ever sees a
+  navigation. Standard technique -- see https://github.com/rafgraph/spa-github-pages.
+  Only needed for a custom-domain/root deployment; if this site is ever
+  moved under a github.io/<repo>/ subpath, set pathSegmentsToKeep below to 1.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Twonit</title>
+    <script>
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+        l.pathname.split("/").slice(0, 1 + pathSegmentsToKeep).join("/") +
+        "/?p=/" + l.pathname.slice(1).replace(/&/g, "~and~") +
+        (l.search ? "&q=" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------
+   Twonit design tokens
+   Full documentation of the "why" behind these values lives in BRAND.md
+   at the project root — treat that file as the source of truth and keep
+   this block in sync with it if either changes.
+--------------------------------------------------------------------- */
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Warm cream / off-white backgrounds */
+  --color-cream-50: #fdfaf6;
+  --color-cream-100: #faf3ea;
+  --color-cream-200: #f4e9da;
+
+  /* Deep plum / burgundy — primary brand color */
+  --color-plum-50: #f8ecf2;
+  --color-plum-100: #f0d9e5;
+  --color-plum-300: #c98caa;
+  --color-plum-500: #8a3564;
+  --color-plum-600: #722851;
+  --color-plum-700: #5c2350;
+  --color-plum-800: #481b3f;
+  --color-plum-900: #33122c;
+
+  /* Muted rose / mauve accents */
+  --color-rose-100: #f6e4ea;
+  --color-rose-300: #d9a8b7;
+  --color-rose-500: #b56d84;
+
+  /* Restrained warm orange / peach accents */
+  --color-peach-100: #fbe9d8;
+  --color-peach-300: #eab887;
+  --color-peach-500: #d99a5c;
+
+  /* Subtle green for approval / success states */
+  --color-green-100: #e3efe5;
+  --color-green-500: #4f8f63;
+  --color-green-700: #366a48;
+
+  /* Dark near-black text */
+  --color-ink-900: #201a1d;
+  --color-ink-700: #4a4247;
+  --color-ink-500: #787074;
+
+  --shadow-card: 0 1px 2px rgba(51, 18, 44, 0.04), 0 8px 24px -12px rgba(51, 18, 44, 0.18);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-cream-50);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  /* Visible focus states everywhere, keyboard users included */
+  :focus-visible {
+    outline: 2px solid var(--color-plum-600);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-plum-100);
+    color: var(--color-plum-900);
+  }
+}
+
+@layer utilities {
+  .container-page {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-page {
+      padding-inline: 2rem;
+    }
+  }
+
+  .section-pad {
+    padding-block: 4.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-pad {
+      padding-block: 6.5rem;
+    }
+  }
+
+  .eyebrow {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-plum-600);
+  }
+}
