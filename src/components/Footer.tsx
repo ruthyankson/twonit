@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { footer } from "../content/copy";
+import { LogoOnDark } from "./Logo";
 
 // Decorative, inert placeholders -- intentionally not <a> tags, since
 // there's nowhere real for them to go yet (see TODO.md). Grouped under
@@ -30,8 +31,8 @@ export default function Footer() {
     <footer className="bg-plum-900 text-cream-50">
       <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div>
-          <p className="font-display text-xl font-semibold">{footer.brand}</p>
-          <p className="mt-2 max-w-[16rem] text-sm text-cream-50/70">
+          <LogoOnDark className="h-7" />
+          <p className="mt-3 max-w-[16rem] text-sm text-cream-50/70">
             {footer.tagline}
           </p>
           <div className="mt-6">

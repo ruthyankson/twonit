@@ -44,15 +44,34 @@ before treating this as a finished, permanent launch site.
       placeholders, not real images. Replace with real photography or
       commissioned illustration once available; see BRAND.md for the
       visual direction those should follow.
-- [ ] **Favicon / logo is a placeholder mark**, not a designed logo —
-      two overlapping circles in the brand colors (`public/favicon.svg`,
-      `public/apple-touch-icon.png`). Replace once real logo design
-      exists, and update `BRAND.md`'s "Logo / wordmark treatment"
-      section to match.
+- [ ] **Logo has no vector source.** The real logo (monogram + "twonit"
+      wordmark, per the founder's brand board) is in the site as
+      *rasterized PNGs* cut out of a flattened brand-board image — see
+      `public/images/logo/` and `BRAND.md`'s "Logo / wordmark treatment"
+      for exactly which file is which and where each is used. This
+      works fine at the sizes currently used (nav, footer, favicon), but
+      it means the mark can't be recolored, re-exported at arbitrary
+      sizes, or cleanly resized much larger without visible softness. If
+      the original design tool file (Figma/Illustrator/etc.) exists,
+      getting proper SVG/vector source from it — and re-cutting these
+      same five assets from that — would remove this limitation
+      entirely.
 - [ ] **OG/social-share cover image** (`public/images/og-cover.jpg`) was
-      composited from the hero photo plus the wordmark — functional for
-      link previews, but not a dedicated social-card design. Consider
-      commissioning a proper one alongside the logo.
+      composited from the real logo mark plus the hero photo —
+      functional for link previews, but not a dedicated social-card
+      design. Consider commissioning a proper one once vector logo
+      source exists.
+- [ ] **No formal trademark clearance search has been run on "Twonit"
+      or the logo mark.** Claude checked the name against general web
+      search results (see the naming conversation earlier in this
+      project) and found no obvious existing product or registered
+      trademark using it, but that is not a substitute for a real
+      clearance search — Claude has no access to trademark registries
+      (USPTO, WIPO, or Ghana's own registry) and cannot search for
+      visual similarity to other logos at all. Before treating "Twonit"
+      or this mark as safe to build a business on, get an actual
+      trademark search done (a trademark attorney, or a paid search
+      service) in whichever countries matter for launch.
 
 ## Infrastructure
 

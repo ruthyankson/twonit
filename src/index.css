@@ -10,42 +10,55 @@
   --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* Warm cream / off-white backgrounds */
-  --color-cream-50: #fdfaf6;
-  --color-cream-100: #faf3ea;
-  --color-cream-200: #f4e9da;
+  /* Cream — official brand swatch #FAF6F1, used as the page ground.
+     -50/-100/-200 are computed tints toward plum for subtle borders,
+     not independently "designed" colors. */
+  --color-cream-50: #faf6f1;
+  --color-cream-100: #efe9e6;
+  --color-cream-200: #e5dcda;
 
-  /* Deep plum / burgundy — primary brand color */
-  --color-plum-50: #f8ecf2;
-  --color-plum-100: #f0d9e5;
-  --color-plum-300: #c98caa;
-  --color-plum-500: #8a3564;
-  --color-plum-600: #722851;
-  --color-plum-700: #5c2350;
-  --color-plum-800: #481b3f;
-  --color-plum-900: #33122c;
+  /* Plum — official brand swatch #4A1F35, the primary brand color.
+     Every step but -700 is a computed tint (toward cream, for -50..-600)
+     or shade (toward near-black, for -800/-900) of that one swatch —
+     a full ramp so components can reach for -200/-400/-500 etc.
+     without landing on an undefined utility. */
+  --color-plum-50: #efe9e6;
+  --color-plum-100: #e1d8d7;
+  --color-plum-200: #c2b1b5;
+  --color-plum-300: #9b828b;
+  --color-plum-400: #745362;
+  --color-plum-500: #5c3448;
+  --color-plum-600: #4f253b;
+  --color-plum-700: #4a1f35;
+  --color-plum-800: #401c2e;
+  --color-plum-900: #371a28;
 
-  /* Muted rose / mauve accents */
-  --color-rose-100: #f6e4ea;
-  --color-rose-300: #d9a8b7;
-  --color-rose-500: #b56d84;
+  /* Mauve — official brand swatch #B57A86. -100/-300 are computed
+     tints for soft fills. */
+  --color-mauve-100: #f0e3e1;
+  --color-mauve-300: #dec4c6;
+  --color-mauve-500: #b57a86;
 
-  /* Restrained warm orange / peach accents */
-  --color-peach-100: #fbe9d8;
-  --color-peach-300: #eab887;
-  --color-peach-500: #d99a5c;
+  /* Peach — official brand swatch #E79A74. -100/-300 are computed
+     tints for soft fills/washes. */
+  --color-peach-100: #f7e8de;
+  --color-peach-300: #f0c8b2;
+  --color-peach-500: #e79a74;
 
-  /* Subtle green for approval / success states */
-  --color-green-100: #e3efe5;
-  --color-green-500: #4f8f63;
-  --color-green-700: #366a48;
+  /* Sage — official brand swatch #6B8F7A, reserved for approval /
+     success states only (never a decorative accent, so it keeps its
+     meaning). -100 and -700 are computed tint/shade. */
+  --color-sage-100: #e5e7df;
+  --color-sage-500: #6b8f7a;
+  --color-sage-700: #557060;
 
-  /* Dark near-black text */
+  /* Dark near-black text (not part of the 5-swatch brand palette --
+     a neutral chosen for body-text contrast against cream). */
   --color-ink-900: #201a1d;
   --color-ink-700: #4a4247;
   --color-ink-500: #787074;
 
-  --shadow-card: 0 1px 2px rgba(51, 18, 44, 0.04), 0 8px 24px -12px rgba(51, 18, 44, 0.18);
+  --shadow-card: 0 1px 2px rgba(74, 31, 53, 0.05), 0 8px 24px -12px rgba(74, 31, 53, 0.2);
 }
 
 @layer base {

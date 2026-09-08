@@ -107,10 +107,12 @@ technique — don't remove either half without replacing the other.
   exists. The hero photo (`public/images/hero-collaboration.{jpg,webp}`)
   is already real — see `TODO.md` for its provenance and how to replace
   it with commissioned photography later.
-- **Favicon / logo**: `public/favicon.svg` and `public/apple-touch-icon.png`
-  are placeholder marks (two overlapping circles), not a designed logo.
-  Replace both, and update the "Logo / wordmark treatment" section of
-  `BRAND.md`, once real logo design exists.
+- **Logo / favicon**: the real logo is in place (`public/images/logo/`,
+  used via `src/components/Logo.tsx`; favicons generated from it live at
+  `public/favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png`).
+  It's cut from a flattened brand-board image, not vector source — see
+  TODO.md for what that limits and BRAND.md for exactly which file is
+  used where.
 - **Copy**: edit `src/content/copy.ts` (and mirror the change in
   `CONTENT.md`).
 - **Legal pages**: `src/pages/Privacy.tsx` and `src/pages/Terms.tsx`

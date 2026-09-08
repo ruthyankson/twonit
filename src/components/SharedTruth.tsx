@@ -38,7 +38,7 @@ export default function SharedTruth() {
                 {sharedTruth.mockup.orderName}
               </p>
             </div>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-sage-100 px-3 py-1 text-xs font-semibold text-sage-700">
               <CheckCircleIcon className="h-3.5 w-3.5" />
               {sharedTruth.mockup.approval}
             </span>
@@ -64,7 +64,7 @@ export default function SharedTruth() {
             })}
           </dl>
 
-          <p className="mt-5 rounded-lg bg-rose-100/70 px-3 py-2 text-center text-xs font-medium text-plum-700">
+          <p className="mt-5 rounded-lg bg-mauve-100/70 px-3 py-2 text-center text-xs font-medium text-plum-700">
             Visible to both the artisan and the customer
           </p>
         </div>

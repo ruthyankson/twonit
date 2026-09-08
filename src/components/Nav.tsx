@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { nav } from "../content/copy";
+import { LogoLockup } from "./Logo";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -18,11 +19,8 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-plum-100/80 bg-cream-50/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link
-          to="/"
-          className="font-display text-xl font-semibold text-plum-800"
-        >
-          {nav.brand}
+        <Link to="/" aria-label={nav.brand}>
+          <LogoLockup className="h-7 sm:h-8" />
         </Link>
 
         <nav
