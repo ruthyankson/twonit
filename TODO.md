@@ -44,18 +44,15 @@ before treating this as a finished, permanent launch site.
       placeholders, not real images. Replace with real photography or
       commissioned illustration once available; see BRAND.md for the
       visual direction those should follow.
-- [ ] **Logo has no vector source.** The real logo (monogram + "twonit"
-      wordmark, per the founder's brand board) is in the site as
-      *rasterized PNGs* cut out of a flattened brand-board image — see
-      `public/images/logo/` and `BRAND.md`'s "Logo / wordmark treatment"
-      for exactly which file is which and where each is used. This
-      works fine at the sizes currently used (nav, footer, favicon), but
-      it means the mark can't be recolored, re-exported at arbitrary
-      sizes, or cleanly resized much larger without visible softness. If
-      the original design tool file (Figma/Illustrator/etc.) exists,
-      getting proper SVG/vector source from it — and re-cutting these
-      same five assets from that — would remove this limitation
-      entirely.
+- [x] **Logo has no vector source.** ~~Resolved~~ — the founder's
+      combined-artwork source file is now in the repo as inline SVG
+      (`src/components/BrandLockup.tsx`), and Nav/Footer both render
+      from it via `src/components/Logo.tsx` instead of the old
+      rasterized PNG crops. See `BRAND.md`'s "Logo / wordmark treatment".
+      The favicon files (`app-icon-dark.png` / `-light.png` and their
+      generated `favicon-*.png`/`apple-touch-icon.png`) are still raster
+      — fine at those small fixed sizes, and not something a browser
+      favicon slot needs vector for, so left as-is.
 - [ ] **OG/social-share cover image** (`public/images/og-cover.jpg`) was
       composited from the real logo mark plus the hero photo —
       functional for link previews, but not a dedicated social-card

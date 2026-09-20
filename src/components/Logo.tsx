@@ -1,38 +1,31 @@
-// The real Twonit logo, rasterized from the brand board the founder
-// supplied (see TODO.md for provenance / replacing with vector source
-// if the original design file ever becomes available).
+import BrandLockup from "./BrandLockup";
+
+// The real Twonit logo, rendered from vector source (see BrandLockup.tsx
+// -- built straight from the founder's combined-artwork brand file, not
+// a rasterized crop of a flattened brand-board image). Crisp at any
+// size, and its wordmark strokes use `fill="currentColor"`, so a
+// Tailwind text-color class controls the wordmark color per background.
 //
-// The full-color lockup (dark plum wordmark) only reads on a light
-// ground, so it's used in the light-background Nav. Dark backgrounds
-// (the Footer) use the icon alone -- its gradient stays legible on
-// plum -- paired with the wordmark set in cream text, rather than the
-// full-color lockup image which would disappear against plum.
+// The full-color lockup (plum wordmark) only reads on a light ground,
+// so it's used in the light-background Nav. Dark backgrounds (the
+// Footer) set the wordmark in cream instead, since plum text would
+// disappear against the plum-900 footer background -- the icon mark's
+// own gradient stays legible on both.
 
 export function LogoLockup({ className = "h-8" }: { className?: string }) {
   return (
-    <img
-      // The tagline baked into the full lockup image turns into
-      // illegible noise at nav-bar height, so this cropped variant
-      // (icon + wordmark only) is used instead -- see BRAND.md.
-      src="/images/logo/lockup-horizontal-no-tagline.png"
-      alt="Twonit"
-      className={`${className} w-auto`}
+    <BrandLockup
+      className={`${className} w-auto text-plum-700`}
+      idPrefix="site-nav"
     />
   );
 }
 
 export function LogoOnDark({ className = "h-8" }: { className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <img
-        src="/images/logo/icon-only.png"
-        alt=""
-        aria-hidden="true"
-        className="h-full w-auto"
-      />
-      <span className="font-display text-xl font-semibold text-cream-50">
-        twonit
-      </span>
-    </span>
+    <BrandLockup
+      className={`${className} w-auto text-cream-50`}
+      idPrefix="site-footer"
+    />
   );
 }

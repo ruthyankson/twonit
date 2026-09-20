@@ -82,31 +82,39 @@ it never appears as a decorative accent, so it keeps its meaning.
 
 ## Logo / wordmark treatment
 
-The real logo exists: a cursive, interlocking monogram (reads as a
-stylized "N" built from two intertwined strokes — literally "two"
-forms becoming one mark) in a Plum-to-Peach gradient, paired with
-"twonit" set in a bold, rounded lowercase sans wordmark. It was
-designed as a brand board and supplied as a flattened image (not
-vector source) — see TODO.md for what that means for future edits.
+The real logo: a cursive, interlocking monogram (reads as a stylized "N"
+built from two intertwined strokes — literally "two" forms becoming one
+mark) in a Plum-to-Mauve gradient, paired with "twonit" set in a bold,
+rounded lowercase sans wordmark.
 
-Assets, all under `public/images/logo/`:
+This now renders from real vector source, not a raster image —
+`src/components/BrandLockup.tsx` is inline SVG built straight from the
+founder's combined-artwork brand file (icon and wordmark together, at
+the artwork's own fixed relative scale/position, gradient defs scoped by
+an `idPrefix` prop so multiple instances can mount on the same page
+without duplicate-SVG-id collisions — the Nav and Footer both do, on
+every page). Crisp at any size, unlike the old flattened-PNG crops. The
+icon paths keep the artwork's own fixed gradient/fill colors; the
+wordmark paths use `fill="currentColor"`, so a Tailwind text-color class
+picks the wordmark color per background.
 
-| File | What it is | Where it's used |
-|---|---|---|
-| `icon-only.png` | The monogram alone, transparent background | Footer (paired with cream-colored "twonit" text, since the full-color wordmark disappears on a dark ground) |
-| `lockup-horizontal-no-tagline.png` | Monogram + "twonit" wordmark, no tagline, transparent background | Nav (the tagline reads as illegible noise at nav-bar height, so this tagline-free crop is used there) |
-| `lockup-horizontal.png` | Monogram + wordmark + "TWO SIDES. ONE SHARED UNDERSTANDING." tagline, transparent background | Available for larger placements (e.g. a future press/about page) where the tagline is legible |
-| `lockup-stacked.png` | Monogram above wordmark above tagline, transparent background | Not currently placed on the site; available for a future vertical placement (e.g. a splash/loading state) |
-| `app-icon-dark.png` / `app-icon-light.png` | Monogram on a filled rounded-square plum / cream background | Source for `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png` (all in `public/`, generated from `app-icon-dark.png`) |
+`src/components/Logo.tsx` wraps it as two components, `LogoLockup` (used
+in the light-background Nav, wordmark in `text-plum-700`) and
+`LogoOnDark` (used in the dark plum Footer, wordmark in `text-cream-50`,
+since plum-on-plum would disappear). Reuse those two rather than
+importing `BrandLockup` directly in a new spot, so the light/dark color
+rule can't accidentally be broken.
 
-**Rule of thumb**: the full-color wordmark (plum text) only reads on a
-light/cream background. On a dark (plum) background, always use the
-monogram alone plus "twonit" set as plain text in cream/`--color-cream-50`
-— never place the full-color lockup image on a dark ground, since the
-plum text will disappear into it. See `src/components/Logo.tsx`
-(`LogoLockup` for light backgrounds, `LogoOnDark` for dark ones) — reuse
-those two components rather than embedding a raw `<img>` of the logo
-elsewhere, so this rule can't accidentally be broken in a new spot.
+The old rasterized crops under `public/images/logo/` (`icon-only.png`,
+`lockup-horizontal-no-tagline.png`) are no longer used by Nav/Footer but
+are left in place rather than deleted. `lockup-horizontal.png` (with the
+"TWO SIDES. ONE SHARED UNDERSTANDING." tagline) and `lockup-stacked.png`
+remain available for a future placement where a raster export is
+actually wanted (e.g. a social/press kit); a vector tagline lockup could
+also be built from the same source file if one of those placements
+becomes real. `app-icon-dark.png` / `app-icon-light.png` are unrelated —
+still the source for `favicon-16.png`, `favicon-32.png`, and
+`apple-touch-icon.png`, unchanged by this.
 
 ## Tone of voice
 
