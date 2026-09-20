@@ -89,18 +89,32 @@ export const sharedTruth = {
   },
 };
 
+export const instantUpdates = {
+  eyebrow: "No more calling to check in",
+  headline: "A stage update shouldn't cost either of you a phone call.",
+  body: "Dressmakers are busy — stopping mid-fitting to explain “still cutting, ready Thursday” out loud, to the same customer, more than once, adds up. And customers don't love feeling like they're bothering someone just by checking in. Twonit replaces the call with a tap.",
+  before: {
+    label: "The old way",
+    text: "Stop what you're doing, call, and repeat the same update out loud — maybe more than once.",
+  },
+  after: {
+    label: "With Twonit",
+    text: "Move the order to its next stage. Your customer sees it — and gets notified — instantly.",
+  },
+};
+
 export const forArtisans = {
   eyebrow: "For Artisans",
-  headline: "Everything your customer asked for, in one place.",
-  body: "Twonit is being built to help dressmakers and tailors keep hold of the details that are easiest to lose — and hardest to reconstruct after the fact.",
+  headline: "Never ask “what was her measurement again?” twice.",
+  body: "Twonit is being built to help dressmakers and tailors keep hold of the details that are easiest to lose — and hardest to reconstruct after the fact, especially a repeat customer's exact measurements.",
   benefits: [
-    "Organize every customer's requirements in one record, not a stack of notebooks.",
+    "Pull up a repeat customer's saved measurements instantly — no notebook, no re-asking.",
     "Reduce forgotten details by capturing them once, up front.",
-    "Retrieve a previous customer's measurements instead of asking again.",
+    "Move an order to its next stage with one tap — your customer's notified automatically, no call needed.",
+    "Organize every customer's requirements in one record, not a stack of notebooks.",
     "Document exactly what a customer approved, and when.",
     "Keep reference images attached to the correct order — no more lost screenshots.",
     "Track requested changes as they happen, instead of relying on memory.",
-    "Reduce avoidable remakes caused by a misunderstood spec.",
     "Build customer trust with a clear, shared record of what was agreed.",
   ],
   cta: "Join as an artisan",
@@ -116,7 +130,7 @@ export const forCustomers = {
     "Approve the details before work begins on your piece.",
     "Request changes clearly, instead of over a string of messages.",
     "See agreed revisions instead of wondering what changed.",
-    "Follow your order's progress as it's made.",
+    "Know the moment your order moves to its next stage — no need to call and ask.",
     "Keep a useful history of your custom orders over time.",
   ],
   cta: "Join as a customer",

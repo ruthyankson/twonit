@@ -98,23 +98,43 @@ separate heads.
 
 ---
 
+## No more calling to check in
+
+**Eyebrow:** No more calling to check in
+**Headline:** A stage update shouldn't cost either of you a phone call.
+
+**Body:** Dressmakers are busy — stopping mid-fitting to explain
+"still cutting, ready Thursday" out loud, to the same customer, more
+than once, adds up. And customers don't love feeling like they're
+bothering someone just by checking in. Twonit replaces the call with a
+tap.
+
+**Before / after shown side by side:**
+- **The old way:** Stop what you're doing, call, and repeat the same
+  update out loud — maybe more than once.
+- **With Twonit:** Move the order to its next stage. Your customer
+  sees it — and gets notified — instantly.
+
+---
+
 ## For Artisans
 
 **Eyebrow:** For Artisans
-**Headline:** Everything your customer asked for, in one place.
+**Headline:** Never ask "what was her measurement again?" twice.
 
 **Body:** Twonit is being built to help dressmakers and tailors keep
 hold of the details that are easiest to lose — and hardest to
-reconstruct after the fact.
+reconstruct after the fact, especially a repeat customer's exact
+measurements.
 
 **Benefits:**
-- Organize every customer's requirements in one record, not a stack of notebooks.
+- Pull up a repeat customer's saved measurements instantly — no notebook, no re-asking.
 - Reduce forgotten details by capturing them once, up front.
-- Retrieve a previous customer's measurements instead of asking again.
+- Move an order to its next stage with one tap — your customer's notified automatically, no call needed.
+- Organize every customer's requirements in one record, not a stack of notebooks.
 - Document exactly what a customer approved, and when.
 - Keep reference images attached to the correct order — no more lost screenshots.
 - Track requested changes as they happen, instead of relying on memory.
-- Reduce avoidable remakes caused by a misunderstood spec.
 - Build customer trust with a clear, shared record of what was agreed.
 
 **CTA:** Join as an artisan
@@ -135,7 +155,7 @@ a custom order — from the first measurement to the finished piece.
 - Approve the details before work begins on your piece.
 - Request changes clearly, instead of over a string of messages.
 - See agreed revisions instead of wondering what changed.
-- Follow your order's progress as it's made.
+- Know the moment your order moves to its next stage — no need to call and ask.
 - Keep a useful history of your custom orders over time.
 
 **CTA:** Join as a customer

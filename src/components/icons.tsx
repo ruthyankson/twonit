@@ -72,6 +72,16 @@ export function HandshakeIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function PhoneCallIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.5.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.9 21 3 13.1 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.2.2 2.4.57 3.5a1 1 0 0 1-.25 1L6.6 10.8Z" />
+      <path d="M14.5 4.5c2.3 0 4 1.9 4 4" strokeOpacity={0.55} />
+      <path d="M14.5 2c3.6 0 6.5 3 6.5 6.5" strokeOpacity={0.35} />
+    </svg>
+  );
+}
+
 export function CheckCircleIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>

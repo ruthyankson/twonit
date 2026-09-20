@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Problem from "../components/Problem";
 import HowItWorks from "../components/HowItWorks";
 import SharedTruth from "../components/SharedTruth";
+import InstantUpdates from "../components/InstantUpdates";
 import ForArtisans from "../components/ForArtisans";
 import ForCustomers from "../components/ForCustomers";
 import Research from "../components/Research";
@@ -16,6 +17,7 @@ export default function Home() {
       <Problem />
       <HowItWorks />
       <SharedTruth />
+      <InstantUpdates />
       <ForArtisans />
       <ForCustomers />
       <Research />
