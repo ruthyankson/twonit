@@ -64,26 +64,32 @@ export const problem = {
 export const howItWorks = {
   eyebrow: "How Twonit works",
   headline: "Four steps, one shared order.",
+  // Drawn as a staircase; keep each line short enough to take in at a
+  // glance (one line on a phone, two at most on a wide screen).
   steps: [
     {
       number: "01",
+      icon: "measure",
       title: "Capture",
-      body: "Record measurements, specifications, reference images and the other details that matter for this order.",
+      body: "Sizes, style and photos, recorded once.",
     },
     {
       number: "02",
+      icon: "approve",
       title: "Confirm",
-      body: "The customer reviews exactly what's been recorded, and approves it — or requests changes before anything is cut or sewn.",
+      body: "The customer approves before anything is cut.",
     },
     {
       number: "03",
+      icon: "sew",
       title: "Create",
-      body: "The artisan works from the agreed specification, while both sides follow the important milestones as the piece comes together.",
+      body: "Both of you follow each stage as it's made.",
     },
     {
       number: "04",
+      icon: "keep",
       title: "Keep",
-      body: "The order, its measurements, and its full revision history stay available — for this piece, and the next one.",
+      body: "Saved and ready for the next order.",
     },
   ],
 };

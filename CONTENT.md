@@ -69,15 +69,12 @@ seen by both of you.
 **Eyebrow:** How Twonit works
 **Headline:** Four steps, one shared order.
 
-1. **01 — Capture.** Record measurements, specifications, reference
-   images and the other details that matter for this order.
-2. **02 — Confirm.** The customer reviews exactly what's been recorded,
-   and approves it — or requests changes before anything is cut or sewn.
-3. **03 — Create.** The artisan works from the agreed specification,
-   while both sides follow the important milestones as the piece comes
-   together.
-4. **04 — Keep.** The order, its measurements, and its full revision
-   history stay available — for this piece, and the next one.
+Shown as a staircase, one step per stage, each a little higher:
+
+1. **01 — Capture.** Sizes, style and photos, recorded once.
+2. **02 — Confirm.** The customer approves before anything is cut.
+3. **03 — Create.** Both of you follow each stage as it's made.
+4. **04 — Keep.** Saved and ready for the next order.
 
 ---
 
