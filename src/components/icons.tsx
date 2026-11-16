@@ -72,6 +72,17 @@ export function HandshakeIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+// A document with a tick: the one agreed record of an order.
+export function RecordIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7z" />
+      <path d="M14 3v4h4" />
+      <path d="m9.25 14 1.9 1.9 3.6-3.8" />
+    </svg>
+  );
+}
+
 export function PhoneCallIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>
@@ -106,6 +117,16 @@ export function ImageRefIcon(props: SVGProps<SVGSVGElement>) {
       <rect x="4" y="5" width="16" height="14" rx="1.5" />
       <circle cx="9" cy="10" r="1.4" />
       <path d="m6 16 3.5-4 2.5 2.5 3-3.5L20 15.5" />
+    </svg>
+  );
+}
+
+export function ScissorsIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="6" cy="6" r="3" />
+      <circle cx="6" cy="18" r="3" />
+      <path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12" />
     </svg>
   );
 }

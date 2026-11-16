@@ -5,31 +5,38 @@ actual source of truth the site renders from is
 `src/content/copy.ts` — if you edit copy here, make the matching edit
 there (or ask an engineer/Claude to sync it), or the two will drift.
 
+**Wording note — "garment order", not just "order":** "order" alone can
+read as an online shop order. Say "garment order" (or "custom garment
+order") where someone meets the idea for the first time: headlines, the
+first mention in a section, and link previews. After that, plain
+"order" is fine, so the copy doesn't feel repetitive.
+
 ---
 
 ## Navigation
 
 **Brand:** Twonit
 **Links:** How it works · For Artisans · For Customers · Why Twonit · About
-**Primary CTA:** Join the pilot
+**Primary CTA:** Get started (goes to app.twonit.com)
 **Sign-in link:** Sign in (goes to app.twonit.com)
 
 ---
 
 ## Hero
 
-**Eyebrow:** Now piloting with dressmakers & tailors in Ghana
+**Eyebrow:** Open to dressmakers, tailors & customers everywhere
 
 **Headline:** Get custom work right — together.
 
 **Body:** Twonit gives customers and artisans one shared place to record
-measurements, approve specifications, and follow an order from first
-conversation to finished piece — so nothing gets lost between a
+measurements, approve specifications, and follow a garment order from
+first conversation to finished piece — so nothing gets lost between a
 notebook, a WhatsApp chat, and memory.
 
-**Primary CTA:** Join the pilot
+**Primary CTA:** Get started free (goes to app.twonit.com)
 **Secondary CTA:** See how it works
-**Under the buttons:** Already using Twonit? Sign in to the app →
+**Under the buttons:** Free while in pilot · Works in any browser · No
+download needed
 
 **Image:** A customer and a dressmaker looking at a phone together,
 surrounded by fabric, a sketchbook, and a measuring tape — a speech
@@ -42,10 +49,10 @@ through a handshake. (Real asset — see TODO.md for provenance.)
 
 **Eyebrow:** The problem
 
-**Headline:** Custom orders shouldn't depend on memory.
+**Headline:** Garment orders shouldn't depend on memory.
 
 **Body:**
-> Right now, the details of a custom order live in a lot of places at
+> Right now, the details of a custom garment order live in a lot of places at
 > once: a notebook on the sewing table, a WhatsApp thread, a handful of
 > voice notes, photos buried in a camera roll, and whatever both people
 > remember from the first conversation.
@@ -56,25 +63,24 @@ through a handshake. (Real asset — see TODO.md for provenance.)
 > way. That's how a customer ends up with something they didn't ask
 > for, and how an artisan ends up redoing work they already did once.
 
-**Converging sources shown:** Notebooks · WhatsApp & voice notes ·
-Photo galleries · Conversations · Memory → **One shared record**
+**Diagram:** "Where order details live today": Notebooks · WhatsApp &
+voice notes · Photo galleries · Conversations · Memory → "With Twonit":
+**One shared record** — Measurements, styles, approvals and payments,
+seen by both of you.
 
 ---
 
 ## How Twonit works
 
 **Eyebrow:** How Twonit works
-**Headline:** Four steps, one shared order.
+**Headline:** Four steps, one shared garment order.
 
-1. **01 — Capture.** Record measurements, specifications, reference
-   images and the other details that matter for this order.
-2. **02 — Confirm.** The customer reviews exactly what's been recorded,
-   and approves it — or requests changes before anything is cut or sewn.
-3. **03 — Create.** The artisan works from the agreed specification,
-   while both sides follow the important milestones as the piece comes
-   together.
-4. **04 — Keep.** The order, its measurements, and its full revision
-   history stay available — for this piece, and the next one.
+Shown as a staircase, one step per stage, each a little higher:
+
+1. **01 — Capture.** Sizes, style and photos, recorded once.
+2. **02 — Confirm.** The customer approves before anything is cut.
+3. **03 — Create.** Both of you follow each stage as it's made.
+4. **04 — Keep.** Saved and ready for the next order.
 
 ---
 
@@ -135,10 +141,10 @@ especially a repeat customer's exact measurements.
 - Document exactly what a customer approved, and when — with every change tracked.
 - Move an order to its next stage with one tap — your customer's notified automatically, no call needed.
 - Record several garments from one visit together, with one combined payment record.
-- Track deposits and balances, and show customers how to pay you by MoMo, bank transfer or cash.
+- Track deposits and balances, and show customers how to pay you by mobile money, bank transfer or cash.
 - Get found by new customers in the Twonit dressmaker directory.
 
-**CTA:** Join as an artisan
+**CTA:** Start as a dressmaker (goes to the app's dressmaker sign-in)
 
 **Image:** Two phone screens: a dressmaker's orders list and the
 dressmakers directory (names and handles blurred).
@@ -150,7 +156,7 @@ dressmakers directory (names and handles blurred).
 **Eyebrow:** For Customers
 **Headline:** Know exactly what you're getting, before it's made.
 
-**Body:** Twonit gives customers real visibility into a custom order —
+**Body:** Twonit gives customers real visibility into a custom garment order —
 from the first measurement to the finished piece.
 
 **Benefits:**
@@ -163,7 +169,7 @@ from the first measurement to the finished piece.
 - Find a dressmaker by what they make, and request an order directly.
 - Keep a useful history of your custom orders over time.
 
-**CTA:** Join as a customer
+**CTA:** Start as a customer (goes to the app's customer sign-in)
 
 **Image:** Two phone screens: a customer's home and the first step of
 requesting an order.
@@ -225,27 +231,21 @@ build, not industries Twonit currently supports.
 
 ---
 
-## Pilot / waitlist
+## Get started
 
-**Eyebrow:** Join the pilot
-**Headline:** Help shape Twonit from the start.
+**Eyebrow:** Get started
+**Headline:** Try Twonit today — it's free.
 
-**Body:** We're looking for dressmakers, tailors, customers, and
-potential partners to try an early version of Twonit and tell us what
-actually works.
+**Body:** Twonit opens in your phone's browser, wherever you are. Sign
+in with your email, and you're ready to record or request your first
+garment order. While we're in pilot it's free, and your feedback shapes what we
+build next.
 
-**Form fields:** Name · Email · Phone (optional) · Country · City ·
-"I am a..." (Dressmaker/Tailor, Customer, Potential Partner, Other) ·
-Why are you interested? (optional)
+**Buttons:** I'm a dressmaker or tailor (goes to the app's dressmaker
+sign-in) · I'm a customer (goes to the app's customer sign-in)
 
-**CTA:** Join the Twonit pilot
-
-**Privacy note (shown on the form and again after submitting):**
-We'll only use this to reach out about the pilot — no spam, and your
-details aren't shared. (On the form it continues: "How we handle your
-details: Privacy Policy", linking to /privacy.)
-
-**Contact email shown:** hello@twonit.com
+**Under the buttons:** Free to use. You must be 18 or older. By signing
+up you agree to our Terms of Use and Privacy Policy.
 
 ---
 
@@ -289,8 +289,8 @@ soon" — not linked anywhere (see TODO.md).
 
 **Title:** Twonit | Get Custom Work Right Together
 **Description:** Twonit gives customers and artisans one shared place
-to agree on custom-order requirements, approvals, revisions and
-progress.
+to agree on custom garment orders: measurements, approvals, changes
+and progress.
 
 ---
 

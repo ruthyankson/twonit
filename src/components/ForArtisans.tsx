@@ -1,5 +1,5 @@
 import AudienceSection from "./AudienceSection";
-import { forArtisans } from "../content/copy";
+import { appLinks, forArtisans } from "../content/copy";
 
 export default function ForArtisans() {
   return (
@@ -10,6 +10,7 @@ export default function ForArtisans() {
       body={forArtisans.body}
       benefits={forArtisans.benefits}
       cta={forArtisans.cta}
+      ctaHref={appLinks.dressmaker}
       imageLabel="A dressmaker reviewing an order record on a tablet at her workbench"
       image={forArtisans.image}
       imageSide="left"

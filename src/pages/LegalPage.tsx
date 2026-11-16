@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
-import { pilot } from "../content/copy";
+import { legal } from "../content/copy";
 
 // Shared shell for the Privacy Policy and Terms of Use: a title, the
 // date they last changed, a plain-language summary box, then numbered
@@ -45,10 +45,10 @@ export default function LegalPage({
         <p className="mt-10 border-t border-plum-100 pt-6 text-sm text-ink-500">
           Questions about this page? Email{" "}
           <a
-            href={`mailto:${pilot.fallbackEmail}`}
+            href={`mailto:${legal.email}`}
             className="font-medium text-plum-700 underline underline-offset-2"
           >
-            {pilot.fallbackEmail}
+            {legal.email}
           </a>
           .
         </p>

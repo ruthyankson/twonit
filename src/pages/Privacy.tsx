@@ -66,10 +66,10 @@ export default function Privacy() {
           they have agreed to it.
         </p>
         <p>
-          <strong>Forms.</strong> If you join the pilot on this website, we
-          collect your name, email, phone, country, city, role and anything
-          you tell us about why you're interested. If you send feedback in
-          the app, we keep what you write.
+          <strong>Forms.</strong> If you signed up through the pilot form
+          this website used to have, we keep the name, email, phone, country,
+          city, role and anything you told us about why you were interested.
+          If you send feedback in the app, we keep what you write.
         </p>
         <p>
           <strong>Technical data.</strong> Small cookies that keep you signed
@@ -175,6 +175,11 @@ export default function Privacy() {
           and we'll respond as soon as we can and within the time the law
           allows. If you're unhappy with how we handle your data, you can
           also complain to Ghana's Data Protection Commission.
+        </p>
+        <p>
+          Twonit can be used from anywhere. If you live outside Ghana, you may
+          also have rights under the data protection law where you live, and
+          we'll respect those requests too.
         </p>
       </Section>
 

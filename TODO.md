@@ -2,22 +2,18 @@
 
 Everything below needs a human decision, a real external service, legal
 review, or an asset that doesn't exist yet. None of it blocks putting
-the site live as a pilot-recruitment page — it's what to work through
+the site live — it's what to work through
 before treating this as a finished, permanent launch site.
 
 ## Backend / data
 
-- [x] **Pilot form has no backend.** ~~Resolved~~ — it now submits to
-      Supabase (same project as the main product) via a
-      `submit_pilot_signup` RPC; see README.md's "Pilot form backend"
-      section. Two things still need doing before this actually works
-      live: run `application/supabase/migration_032_pilot_signups.sql`
-      in the Supabase SQL editor, and set `VITE_SUPABASE_URL` /
-      `VITE_SUPABASE_ANON_KEY` as GitHub Actions repo secrets. Until
-      both are done, the deployed form silently falls back to its old
-      not-saved behavior rather than erroring.
-- [x] **`hello@twonit.com` is set up** and used on the Contact page,
-      the pilot form and the Privacy Policy / Terms.
+- [x] **Pilot form removed.** The site now links straight to the app,
+      so anyone can sign up there. Earlier sign-ups stay in the
+      `pilot_signups` table (see the admin's "Pilot signups" page). If
+      you set `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` as GitHub
+      Actions secrets, you can delete them; nothing uses them now.
+- [x] **`hello@twonit.com` is set up** and used on the Contact page
+      and the Privacy Policy / Terms.
 
 ## Legal
 
@@ -84,7 +80,7 @@ before treating this as a finished, permanent launch site.
       your registrar, and enabling "Enforce HTTPS" in GitHub Pages
       settings once DNS propagates.
 - [ ] **No analytics configured.** If you want to know how many people
-      actually visit and where the pilot signups come from, add an
+      actually visit and how many of them go on to sign up in the app, add an
       analytics tool (e.g. Plausible, Fathom, or GA4) — none is wired
       up currently, intentionally, since adding one wasn't asked for
       and shouldn't happen silently.

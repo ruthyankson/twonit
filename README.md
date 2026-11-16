@@ -118,54 +118,27 @@ technique — don't remove either half without replacing the other.
 - **Legal pages**: `src/pages/Privacy.tsx` and `src/pages/Terms.tsx`
   are explicitly labeled drafts on the page itself. Replace with
   lawyer-reviewed copy before public launch.
-- **Contact email**: `hello@twonit.com` appears in `src/content/copy.ts`
-  (`pilot.fallbackEmail`) and `src/pages/Contact.tsx` — it is not a
-  live inbox yet. Set it up, or replace it, before launch.
+- **Contact email**: `hello@twonit.com` lives in `src/content/copy.ts`
+  (`legal.email`) and is used on the Contact page and the legal pages.
+- **App links**: every "Get started" button goes straight to the app.
+  The URLs are in `src/content/copy.ts` (`nav.ctaHref`,
+  `hero.primaryHref`, and `appLinks` for the dressmaker / customer
+  sign-ins).
 
-## Pilot form backend
+## Getting started (no sign-up form)
 
-The pilot form (`src/components/Pilot.tsx`) submits straight to
-Supabase — the same project `application` and `twonit-admin` use.
-GitHub Pages only serves static files, but that's fine here: Supabase
-is designed to be called directly from browser JavaScript, so there's
-no server of this site's own involved. `src/lib/supabase.ts` creates
-the client from two env vars, and `handleSubmit` calls the
-`submit_pilot_signup` RPC (defined in
-`application/supabase/migration_032_pilot_signups.sql` — run in the
-Supabase SQL editor, same as every other migration in that project).
+The site has no form and no backend of its own. Every call to action
+links straight to the Twonit app (app.twonit.com), which signs people
+up by email, so anyone, anywhere, can start using it right away. The
+closing "Get started" section (`src/components/GetStarted.tsx`) has one
+button per side: dressmakers and tailors go to
+`/login?role=dressmaker`, customers to `/login?role=customer`.
 
-That RPC, not a direct table insert, is the write path on purpose: the
-`pilot_signups` table has no RLS policies at all (nothing at all is
-reachable through the public client except this one function), and the
-function itself upserts on email, so submitting again (a typo fix, a
-changed answer) updates the existing row instead of creating a
-duplicate.
-
-**The anon key is safe to ship in the built JS bundle.** It's meant to
-be public — anyone reading the site's source can see it, but the RLS
-setup above means the only thing they could do with it is exactly what
-the form already does: submit a pilot signup. There's no way to read,
-update, or delete anyone else's data through it.
-
-**Env vars needed:**
-
-- Locally: copy `.env.example` to `.env.local` and fill in your
-  Supabase project's URL and anon key (Project Settings → API in the
-  Supabase dashboard) — same values `application`'s `.env.local` uses.
-  Without this file, the form silently falls back to its old
-  not-actually-saved behavior rather than crashing.
-- For the GitHub Actions build: add `VITE_SUPABASE_URL` and
-  `VITE_SUPABASE_ANON_KEY` as repo secrets (**Settings → Secrets and
-  variables → Actions**) — `.github/workflows/deploy.yml` passes them
-  into the build step. Vite only bakes in vars prefixed `VITE_` at
-  build time, so both need to be set before the next deploy for the
-  live site's form to actually save anything.
-
-**Reading submissions back:** `twonit-admin`'s "Pilot signups" page
-lists them (name, email, contact info, role, why, and a "Contacted"
-checkbox to mark once someone's followed up) — the service-role client
-there bypasses the table's locked-down RLS the same way it does for
-every other admin screen.
+The site used to have a pilot sign-up form that saved to Supabase.
+It was removed, along with `@supabase/supabase-js`, `src/lib/supabase.ts`
+and the `VITE_SUPABASE_*` env vars. The sign-ups it collected are still
+in the `pilot_signups` table and still listed on `twonit-admin`'s
+"Pilot signups" page.
 
 ## Quality checks already run
 
@@ -176,12 +149,8 @@ every other admin screen.
   policy — not present in a normal deployed environment).
 - Verified responsive layout at mobile (390px) and desktop (1440px)
   widths, plus the mobile nav menu open/close state.
-- Verified the pilot form's fill → submit → success flow end-to-end
-  when the app was last built with no Supabase env vars configured
-  (the honest not-saved fallback). The live-Supabase path (env vars
-  set, `submit_pilot_signup` actually called) hasn't been exercised
-  against a real deployed project yet — worth a manual test once the
-  migration's been run and the env vars are set.
+- Checked that every "Get started" button points at the app, with the
+  right side (dressmaker or customer) for the section it's in.
 
 See `TODO.md` for everything that still needs a human decision or an
 external service before this is fully launch-ready.

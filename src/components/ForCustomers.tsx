@@ -1,5 +1,5 @@
 import AudienceSection from "./AudienceSection";
-import { forCustomers } from "../content/copy";
+import { appLinks, forCustomers } from "../content/copy";
 
 export default function ForCustomers() {
   return (
@@ -10,6 +10,7 @@ export default function ForCustomers() {
       body={forCustomers.body}
       benefits={forCustomers.benefits}
       cta={forCustomers.cta}
+      ctaHref={appLinks.customer}
       imageLabel="A customer reviewing and approving her order details on her phone"
       image={forCustomers.image}
       imageSide="right"

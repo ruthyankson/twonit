@@ -46,7 +46,7 @@ export default function Nav() {
             {nav.signIn.label}
           </a>
           <a
-            href="#pilot"
+            href={nav.ctaHref}
             className="rounded-full bg-plum-700 px-5 py-2.5 text-sm font-semibold text-cream-50 shadow-card transition hover:bg-plum-800"
           >
             {nav.cta}
@@ -109,8 +109,7 @@ export default function Nav() {
             {nav.signIn.label}
           </a>
           <a
-            href="#pilot"
-            onClick={() => setOpen(false)}
+            href={nav.ctaHref}
             className="mt-3 block rounded-full bg-plum-700 px-5 py-3 text-center text-sm font-semibold text-cream-50"
           >
             {nav.cta}
