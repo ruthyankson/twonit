@@ -1,4 +1,4 @@
-import { hero } from "../content/copy";
+import { hero, nav } from "../content/copy";
 
 export default function Hero() {
   return (
@@ -32,6 +32,16 @@ export default function Hero() {
               {hero.secondaryCta}
             </a>
           </div>
+
+          <p className="mt-5 text-sm text-ink-500">
+            {hero.signInNote}{" "}
+            <a
+              href={nav.signIn.href}
+              className="font-semibold text-plum-700 underline underline-offset-2 hover:text-plum-800"
+            >
+              {hero.signInLabel} →
+            </a>
+          </p>
         </div>
 
         <div className="relative">

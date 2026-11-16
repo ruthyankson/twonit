@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
+import { pilot } from "../content/copy";
 
-// Shared shell for Privacy/Terms -- both are placeholder drafts (see
-// TODO.md) so this exists once rather than duplicated per page.
+// Shared shell for the Privacy Policy and Terms of Use: a title, the
+// date they last changed, a plain-language summary box, then numbered
+// sections (see Section below).
 export default function LegalPage({
   title,
   updated,
+  summary,
   children,
 }: {
   title: string;
   updated: string;
+  summary: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -27,16 +31,51 @@ export default function LegalPage({
         </h1>
         <p className="mt-2 text-sm text-ink-500">Last updated: {updated}</p>
 
-        <div className="mt-6 rounded-xl border border-dashed border-plum-300 bg-plum-50 p-4 text-sm text-plum-700">
-          <strong>Draft placeholder.</strong> This page has not been
-          reviewed by a lawyer and should not be treated as Twonit's real
-          policy yet. See TODO.md.
+        <div className="mt-6 rounded-xl border border-plum-200 bg-plum-50 p-5 text-[0.95rem] leading-relaxed text-ink-700">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-plum-700">
+            In short
+          </p>
+          {summary}
         </div>
 
-        <div className="prose-legal mt-8 space-y-5 text-[0.95rem] leading-relaxed text-ink-700">
+        <div className="mt-8 space-y-8 text-[0.95rem] leading-relaxed text-ink-700">
           {children}
         </div>
+
+        <p className="mt-10 border-t border-plum-100 pt-6 text-sm text-ink-500">
+          Questions about this page? Email{" "}
+          <a
+            href={`mailto:${pilot.fallbackEmail}`}
+            className="font-medium text-plum-700 underline underline-offset-2"
+          >
+            {pilot.fallbackEmail}
+          </a>
+          .
+        </p>
       </div>
     </div>
   );
+}
+
+export function Section({
+  number,
+  title,
+  children,
+}: {
+  number: number;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <section className="space-y-3">
+      <h2 className="font-display text-xl font-semibold text-plum-900">
+        {number}. {title}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
+export function Bullets({ children }: { children: ReactNode }) {
+  return <ul className="list-disc space-y-2 pl-5">{children}</ul>;
 }

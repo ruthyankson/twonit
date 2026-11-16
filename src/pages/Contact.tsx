@@ -23,10 +23,6 @@ export default function Contact() {
           </a>
         </p>
 
-        <div className="mt-6 rounded-xl border border-dashed border-plum-300 bg-plum-50 p-4 text-sm text-plum-700">
-          <strong>Placeholder address.</strong> This inbox needs to be set
-          up before launch — see TODO.md.
-        </div>
 
         <p className="mt-6 text-sm text-ink-500">
           If you're a dressmaker, tailor, or customer who wants to try

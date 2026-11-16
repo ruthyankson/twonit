@@ -1,4 +1,5 @@
 import { useId, useState, type FormEvent } from "react";
+import { Link } from "react-router-dom";
 import { pilot } from "../content/copy";
 import { supabase, supabaseConfigured } from "../lib/supabase";
 
@@ -175,7 +176,14 @@ export default function Pilot() {
                 <p className="mt-4 text-xs leading-relaxed text-red-600">{error}</p>
               ) : (
                 <p className="mt-4 text-xs leading-relaxed text-ink-500">
-                  {pilot.fallbackNote}
+                  {pilot.fallbackNote} {pilot.privacyNote}{" "}
+                  <Link
+                    to="/privacy"
+                    className="font-medium text-plum-700 underline underline-offset-2"
+                  >
+                    {pilot.privacyLinkLabel}
+                  </Link>
+                  .
                 </p>
               )}
             </form>

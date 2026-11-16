@@ -12,6 +12,7 @@ there (or ask an engineer/Claude to sync it), or the two will drift.
 **Brand:** Twonit
 **Links:** How it works · For Artisans · For Customers · Why Twonit · About
 **Primary CTA:** Join the pilot
+**Sign-in link:** Sign in (goes to app.twonit.com)
 
 ---
 
@@ -28,6 +29,7 @@ notebook, a WhatsApp chat, and memory.
 
 **Primary CTA:** Join the pilot
 **Secondary CTA:** See how it works
+**Under the buttons:** Already using Twonit? Sign in to the app →
 
 **Image:** A customer and a dressmaker looking at a phone together,
 surrounded by fabric, a sketchbook, and a measuring tape — a speech
@@ -122,20 +124,19 @@ tap.
 **Eyebrow:** For Artisans
 **Headline:** Never ask "what was her measurement again?" twice.
 
-**Body:** Twonit is being built to help dressmakers and tailors keep
-hold of the details that are easiest to lose — and hardest to
-reconstruct after the fact, especially a repeat customer's exact
-measurements.
+**Body:** Twonit helps dressmakers and tailors keep hold of the details
+that are easiest to lose — and hardest to reconstruct after the fact,
+especially a repeat customer's exact measurements.
 
 **Benefits:**
 - Pull up a repeat customer's saved measurements instantly — no notebook, no re-asking.
-- Reduce forgotten details by capturing them once, up front.
+- Start each order from the right measurement list for the garment, for women, men and children.
+- Take on new garments and alterations or repairs, each with its own steps.
+- Document exactly what a customer approved, and when — with every change tracked.
 - Move an order to its next stage with one tap — your customer's notified automatically, no call needed.
-- Organize every customer's requirements in one record, not a stack of notebooks.
-- Document exactly what a customer approved, and when.
-- Keep reference images attached to the correct order — no more lost screenshots.
-- Track requested changes as they happen, instead of relying on memory.
-- Build customer trust with a clear, shared record of what was agreed.
+- Record several garments from one visit together, with one combined payment record.
+- Track deposits and balances, and show customers how to pay you by MoMo, bank transfer or cash.
+- Get found by new customers in the Twonit dressmaker directory.
 
 **CTA:** Join as an artisan
 
@@ -146,16 +147,17 @@ measurements.
 **Eyebrow:** For Customers
 **Headline:** Know exactly what you're getting, before it's made.
 
-**Body:** Twonit is being built to give customers real visibility into
-a custom order — from the first measurement to the finished piece.
+**Body:** Twonit gives customers real visibility into a custom order —
+from the first measurement to the finished piece.
 
 **Benefits:**
 - See exactly what's been recorded about your order, in plain language.
-- Confirm your measurements and specifications yourself.
-- Approve the details before work begins on your piece.
+- Approve your measurements and the design before work begins on your piece.
 - Request changes clearly, instead of over a string of messages.
-- See agreed revisions instead of wondering what changed.
 - Know the moment your order moves to its next stage — no need to call and ask.
+- Save measurements for yourself and your family, and reuse them on every order.
+- See what you've paid, what's left, and exactly how to pay your dressmaker.
+- Find a dressmaker by what they make, and request an order directly.
 - Keep a useful history of your custom orders over time.
 
 **CTA:** Join as a customer
@@ -234,9 +236,10 @@ Why are you interested? (optional)
 
 **Privacy note (shown on the form and again after submitting):**
 We'll only use this to reach out about the pilot — no spam, and your
-details aren't shared.
+details aren't shared. (On the form it continues: "How we handle your
+details: Privacy Policy", linking to /privacy.)
 
-**Fallback contact email shown:** hello@twonit.com *(placeholder — see TODO.md)*
+**Contact email shown:** hello@twonit.com
 
 ---
 
@@ -282,3 +285,16 @@ soon" — not linked anywhere (see TODO.md).
 **Description:** Twonit gives customers and artisans one shared place
 to agree on custom-order requirements, approvals, revisions and
 progress.
+
+---
+
+## Privacy Policy and Terms of Use
+
+The full wording lives in `src/pages/Privacy.tsx` and
+`src/pages/Terms.tsx`; who runs Twonit, the contact email and the
+"Last updated" date come from `legal` in `src/content/copy.ts`.
+
+- **Run by:** Ruth Adwowa Yankson, the founder, in Ghana
+- **Contact:** hello@twonit.com
+- **Minimum age:** 18 (parents can save a child's measurements on their own account)
+- **Law:** Ghana's Data Protection Act, 2012 (Act 843); Ghanaian law and courts for the terms

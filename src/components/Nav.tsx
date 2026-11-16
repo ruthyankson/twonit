@@ -38,7 +38,13 @@ export default function Nav() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-5 md:flex">
+          <a
+            href={nav.signIn.href}
+            className="text-sm font-semibold text-plum-700 transition hover:text-plum-800"
+          >
+            {nav.signIn.label}
+          </a>
           <a
             href="#pilot"
             className="rounded-full bg-plum-700 px-5 py-2.5 text-sm font-semibold text-cream-50 shadow-card transition hover:bg-plum-800"
@@ -97,9 +103,15 @@ export default function Nav() {
             ))}
           </ul>
           <a
+            href={nav.signIn.href}
+            className="mt-4 block rounded-full border border-plum-300 px-5 py-3 text-center text-sm font-semibold text-plum-800"
+          >
+            {nav.signIn.label}
+          </a>
+          <a
             href="#pilot"
             onClick={() => setOpen(false)}
-            className="mt-4 block rounded-full bg-plum-700 px-5 py-3 text-center text-sm font-semibold text-cream-50"
+            className="mt-3 block rounded-full bg-plum-700 px-5 py-3 text-center text-sm font-semibold text-cream-50"
           >
             {nav.cta}
           </a>

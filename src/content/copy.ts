@@ -15,6 +15,8 @@ export const nav = {
     { label: "About", href: "#about" },
   ],
   cta: "Join the pilot",
+  // Twonit itself (the app) -- for people already using it.
+  signIn: { label: "Sign in", href: "https://app.twonit.com" },
 };
 
 export const hero = {
@@ -24,6 +26,8 @@ export const hero = {
   primaryCta: "Join the pilot",
   secondaryCta: "See how it works",
   secondaryHref: "#how-it-works",
+  signInNote: "Already using Twonit?",
+  signInLabel: "Sign in to the app",
   imageAlt:
     "A customer and a dressmaker looking at a phone together, surrounded by fabric, a sketchbook, and a measuring tape — a speech bubble with a dress and one with a sewing machine connect above them through a handshake, illustrating two sides reaching one shared understanding.",
 };
@@ -106,16 +110,16 @@ export const instantUpdates = {
 export const forArtisans = {
   eyebrow: "For Artisans",
   headline: "Never ask “what was her measurement again?” twice.",
-  body: "Twonit is being built to help dressmakers and tailors keep hold of the details that are easiest to lose — and hardest to reconstruct after the fact, especially a repeat customer's exact measurements.",
+  body: "Twonit helps dressmakers and tailors keep hold of the details that are easiest to lose — and hardest to reconstruct after the fact, especially a repeat customer's exact measurements.",
   benefits: [
     "Pull up a repeat customer's saved measurements instantly — no notebook, no re-asking.",
-    "Reduce forgotten details by capturing them once, up front.",
+    "Start each order from the right measurement list for the garment, for women, men and children.",
+    "Take on new garments and alterations or repairs, each with its own steps.",
+    "Document exactly what a customer approved, and when — with every change tracked.",
     "Move an order to its next stage with one tap — your customer's notified automatically, no call needed.",
-    "Organize every customer's requirements in one record, not a stack of notebooks.",
-    "Document exactly what a customer approved, and when.",
-    "Keep reference images attached to the correct order — no more lost screenshots.",
-    "Track requested changes as they happen, instead of relying on memory.",
-    "Build customer trust with a clear, shared record of what was agreed.",
+    "Record several garments from one visit together, with one combined payment record.",
+    "Track deposits and balances, and show customers how to pay you by MoMo, bank transfer or cash.",
+    "Get found by new customers in the Twonit dressmaker directory.",
   ],
   cta: "Join as an artisan",
 };
@@ -123,14 +127,15 @@ export const forArtisans = {
 export const forCustomers = {
   eyebrow: "For Customers",
   headline: "Know exactly what you're getting, before it's made.",
-  body: "Twonit is being built to give customers real visibility into a custom order — from the first measurement to the finished piece.",
+  body: "Twonit gives customers real visibility into a custom order — from the first measurement to the finished piece.",
   benefits: [
     "See exactly what's been recorded about your order, in plain language.",
-    "Confirm your measurements and specifications yourself.",
-    "Approve the details before work begins on your piece.",
+    "Approve your measurements and the design before work begins on your piece.",
     "Request changes clearly, instead of over a string of messages.",
-    "See agreed revisions instead of wondering what changed.",
     "Know the moment your order moves to its next stage — no need to call and ask.",
+    "Save measurements for yourself and your family, and reuse them on every order.",
+    "See what you've paid, what's left, and exactly how to pay your dressmaker.",
+    "Find a dressmaker by what they make, and request an order directly.",
     "Keep a useful history of your custom orders over time.",
   ],
   cta: "Join as a customer",
@@ -204,6 +209,8 @@ export const pilot = {
   ],
   fallbackNote:
     "We'll only use this to reach out about the pilot — no spam, and your details aren't shared.",
+  privacyNote: "How we handle your details:",
+  privacyLinkLabel: "Privacy Policy",
   fallbackEmail: "hello@twonit.com",
 };
 
@@ -245,6 +252,14 @@ export const footer = {
     },
   ],
   socialPlaceholderNote: "Social accounts coming soon",
+};
+
+// The Privacy Policy and Terms of Use (src/pages/Privacy.tsx, Terms.tsx).
+// Change `updated` whenever either page's wording changes.
+export const legal = {
+  operator: "Ruth Adwowa Yankson",
+  email: "hello@twonit.com",
+  updated: "16 November 2026",
 };
 
 export const seo = {

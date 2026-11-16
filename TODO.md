@@ -16,20 +16,24 @@ before treating this as a finished, permanent launch site.
       `VITE_SUPABASE_ANON_KEY` as GitHub Actions repo secrets. Until
       both are done, the deployed form silently falls back to its old
       not-saved behavior rather than erroring.
-- [ ] **`hello@twonit.com` isn't a real inbox yet.** Set it up (or
-      replace it with whatever address you do want to use) before
-      relying on it anywhere public. It currently appears in
-      `src/content/copy.ts` (`pilot.fallbackEmail`) and
-      `src/pages/Contact.tsx`.
+- [x] **`hello@twonit.com` is set up** and used on the Contact page,
+      the pilot form and the Privacy Policy / Terms.
 
 ## Legal
 
-- [ ] **Privacy Policy and Terms of Use are placeholder drafts**
-      (`src/pages/Privacy.tsx`, `src/pages/Terms.tsx`), clearly labeled
-      as such on the pages themselves. Get real ones written and
-      reviewed by a lawyer before this is a permanent public launch
-      site, particularly once the pilot form actually starts collecting
-      and storing personal data (name, email, phone, location).
+- [x] **Privacy Policy and Terms of Use written** (`src/pages/Privacy.tsx`,
+      `src/pages/Terms.tsx`): they cover the website and the app, name
+      the founder as operator, set 18+ and follow Ghana's Data Protection
+      Act, 2012 (Act 843). They were drafted without a lawyer; have a
+      Ghanaian lawyer or data protection professional review them before a
+      wider public launch.
+- [ ] **Register with Ghana's Data Protection Commission** as a data
+      controller (dataprotection.org.gh). The policy doesn't claim
+      registration yet; mention it there once done.
+- [ ] **Photos are stored at unguessable but public addresses** (the
+      `reference-images` storage bucket), as the Privacy Policy says. Move
+      them to private storage with signed links if that changes, and
+      update the policy.
 
 ## Assets
 
@@ -40,7 +44,7 @@ before treating this as a finished, permanent launch site.
       commissions real photography of actual dressmakers and customers
       — that should replace it, since real photography of real users
       will always read as more credible than an illustrated stand-in.
-- [ ] **`<ImagePlaceholder />` slots** in `ForArtisans.tsx` and
+- [ ] **`<ImagePlaceholder />` slots** (founder is sending app screenshots) in `ForArtisans.tsx` and
       `ForCustomers.tsx` are deliberately unfinished — dashed-border
       placeholders, not real images. Replace with real photography or
       commissioned illustration once available; see BRAND.md for the
