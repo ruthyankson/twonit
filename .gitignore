@@ -12,9 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Environment variables (Supabase URL/anon key for the pilot form --
-# see README.md's "Pilot form backend" section). .env.example is
-# intentionally NOT ignored -- it documents the two keys without values.
+# Environment variables (the site doesn't use any right now).
 .env
 .env.local
 .env.*.local

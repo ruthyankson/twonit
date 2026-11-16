@@ -14,20 +14,29 @@ export const nav = {
     { label: "Why Twonit", href: "#shared-truth" },
     { label: "About", href: "#about" },
   ],
-  cta: "Join the pilot",
-  // Twonit itself (the app) -- for people already using it.
+  cta: "Get started",
+  // Twonit itself (the app): its start page asks "dressmaker or
+  // customer?" and signs people in or up by email.
+  ctaHref: "https://app.twonit.com",
   signIn: { label: "Sign in", href: "https://app.twonit.com" },
 };
 
+// Straight into the right sign-in on the app for each side.
+export const appLinks = {
+  dressmaker: "https://app.twonit.com/login?role=dressmaker&next=/dashboard/home",
+  customer: "https://app.twonit.com/login?role=customer&next=/customer/home",
+};
+
 export const hero = {
-  eyebrow: "Now piloting with dressmakers & tailors in Ghana",
+  eyebrow: "Open to dressmakers, tailors & customers everywhere",
   headline: "Get custom work right — together.",
   body: "Twonit gives customers and artisans one shared place to record measurements, approve specifications, and follow an order from first conversation to finished piece — so nothing gets lost between a notebook, a WhatsApp chat, and memory.",
-  primaryCta: "Join the pilot",
+  primaryCta: "Get started free",
+  primaryHref: "https://app.twonit.com",
   secondaryCta: "See how it works",
   secondaryHref: "#how-it-works",
-  signInNote: "Already using Twonit?",
-  signInLabel: "Sign in to the app",
+  // Under the buttons.
+  note: "Free while in pilot · Works in any browser · No download needed",
   imageAlt:
     "A customer and a dressmaker looking at a phone together, surrounded by fabric, a sketchbook, and a measuring tape — a speech bubble with a dress and one with a sewing machine connect above them through a handshake, illustrating two sides reaching one shared understanding.",
 };
@@ -46,7 +55,10 @@ export const problem = {
     { label: "Conversations", icon: "speech" },
     { label: "Memory", icon: "memory" },
   ],
+  sourcesLabel: "Where order details live today",
+  resultEyebrow: "With Twonit",
   resultLabel: "One shared record",
+  resultCaption: "Measurements, styles, approvals and payments, seen by both of you.",
 };
 
 export const howItWorks = {
@@ -118,10 +130,10 @@ export const forArtisans = {
     "Document exactly what a customer approved, and when — with every change tracked.",
     "Move an order to its next stage with one tap — your customer's notified automatically, no call needed.",
     "Record several garments from one visit together, with one combined payment record.",
-    "Track deposits and balances, and show customers how to pay you by MoMo, bank transfer or cash.",
+    "Track deposits and balances, and show customers how to pay you by mobile money, bank transfer or cash.",
     "Get found by new customers in the Twonit dressmaker directory.",
   ],
-  cta: "Join as an artisan",
+  cta: "Start as a dressmaker",
   image: {
     jpg: "/images/artisans-app.jpg",
     webp: "/images/artisans-app.webp",
@@ -143,7 +155,7 @@ export const forCustomers = {
     "Find a dressmaker by what they make, and request an order directly.",
     "Keep a useful history of your custom orders over time.",
   ],
-  cta: "Join as a customer",
+  cta: "Start as a customer",
   image: {
     jpg: "/images/customers-app.jpg",
     webp: "/images/customers-app.webp",
@@ -206,22 +218,14 @@ export const beyondTailoring = {
     "These are future directions we're keeping in mind while we build, not industries Twonit currently supports.",
 };
 
-export const pilot = {
-  eyebrow: "Join the pilot",
-  headline: "Help shape Twonit from the start.",
-  body: "We're looking for dressmakers, tailors, customers, and potential partners to try an early version of Twonit and tell us what actually works.",
-  cta: "Join the Twonit pilot",
-  roleOptions: [
-    "Dressmaker/Tailor",
-    "Customer",
-    "Potential Partner",
-    "Other",
-  ],
-  fallbackNote:
-    "We'll only use this to reach out about the pilot — no spam, and your details aren't shared.",
-  privacyNote: "How we handle your details:",
-  privacyLinkLabel: "Privacy Policy",
-  fallbackEmail: "hello@twonit.com",
+export const getStarted = {
+  eyebrow: "Get started",
+  headline: "Try Twonit today — it's free.",
+  body: "Twonit opens in your phone's browser, wherever you are. Sign in with your email, and you're ready to record or request your first order. While we're in pilot it's free, and your feedback shapes what we build next.",
+  dressmakerCta: "I'm a dressmaker or tailor",
+  customerCta: "I'm a customer",
+  // Under the buttons, before the Terms / Privacy links.
+  legalNote: "Free to use. You must be 18 or older. By signing up you agree to our",
 };
 
 export const about = {

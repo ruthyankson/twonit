@@ -1,4 +1,4 @@
-import { hero, nav } from "../content/copy";
+import { hero } from "../content/copy";
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
-              href="#pilot"
+              href={hero.primaryHref}
               className="rounded-full bg-plum-700 px-6 py-3.5 text-base font-semibold text-cream-50 shadow-card transition hover:bg-plum-800"
             >
               {hero.primaryCta}
@@ -33,15 +33,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <p className="mt-5 text-sm text-ink-500">
-            {hero.signInNote}{" "}
-            <a
-              href={nav.signIn.href}
-              className="font-semibold text-plum-700 underline underline-offset-2 hover:text-plum-800"
-            >
-              {hero.signInLabel} →
-            </a>
-          </p>
+          <p className="mt-5 text-sm text-ink-500">{hero.note}</p>
         </div>
 
         <div className="relative">

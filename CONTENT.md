@@ -11,14 +11,14 @@ there (or ask an engineer/Claude to sync it), or the two will drift.
 
 **Brand:** Twonit
 **Links:** How it works · For Artisans · For Customers · Why Twonit · About
-**Primary CTA:** Join the pilot
+**Primary CTA:** Get started (goes to app.twonit.com)
 **Sign-in link:** Sign in (goes to app.twonit.com)
 
 ---
 
 ## Hero
 
-**Eyebrow:** Now piloting with dressmakers & tailors in Ghana
+**Eyebrow:** Open to dressmakers, tailors & customers everywhere
 
 **Headline:** Get custom work right — together.
 
@@ -27,9 +27,10 @@ measurements, approve specifications, and follow an order from first
 conversation to finished piece — so nothing gets lost between a
 notebook, a WhatsApp chat, and memory.
 
-**Primary CTA:** Join the pilot
+**Primary CTA:** Get started free (goes to app.twonit.com)
 **Secondary CTA:** See how it works
-**Under the buttons:** Already using Twonit? Sign in to the app →
+**Under the buttons:** Free while in pilot · Works in any browser · No
+download needed
 
 **Image:** A customer and a dressmaker looking at a phone together,
 surrounded by fabric, a sketchbook, and a measuring tape — a speech
@@ -56,8 +57,10 @@ through a handshake. (Real asset — see TODO.md for provenance.)
 > way. That's how a customer ends up with something they didn't ask
 > for, and how an artisan ends up redoing work they already did once.
 
-**Converging sources shown:** Notebooks · WhatsApp & voice notes ·
-Photo galleries · Conversations · Memory → **One shared record**
+**Diagram:** "Where order details live today": Notebooks · WhatsApp &
+voice notes · Photo galleries · Conversations · Memory → "With Twonit":
+**One shared record** — Measurements, styles, approvals and payments,
+seen by both of you.
 
 ---
 
@@ -135,10 +138,10 @@ especially a repeat customer's exact measurements.
 - Document exactly what a customer approved, and when — with every change tracked.
 - Move an order to its next stage with one tap — your customer's notified automatically, no call needed.
 - Record several garments from one visit together, with one combined payment record.
-- Track deposits and balances, and show customers how to pay you by MoMo, bank transfer or cash.
+- Track deposits and balances, and show customers how to pay you by mobile money, bank transfer or cash.
 - Get found by new customers in the Twonit dressmaker directory.
 
-**CTA:** Join as an artisan
+**CTA:** Start as a dressmaker (goes to the app's dressmaker sign-in)
 
 **Image:** Two phone screens: a dressmaker's orders list and the
 dressmakers directory (names and handles blurred).
@@ -163,7 +166,7 @@ from the first measurement to the finished piece.
 - Find a dressmaker by what they make, and request an order directly.
 - Keep a useful history of your custom orders over time.
 
-**CTA:** Join as a customer
+**CTA:** Start as a customer (goes to the app's customer sign-in)
 
 **Image:** Two phone screens: a customer's home and the first step of
 requesting an order.
@@ -225,27 +228,21 @@ build, not industries Twonit currently supports.
 
 ---
 
-## Pilot / waitlist
+## Get started
 
-**Eyebrow:** Join the pilot
-**Headline:** Help shape Twonit from the start.
+**Eyebrow:** Get started
+**Headline:** Try Twonit today — it's free.
 
-**Body:** We're looking for dressmakers, tailors, customers, and
-potential partners to try an early version of Twonit and tell us what
-actually works.
+**Body:** Twonit opens in your phone's browser, wherever you are. Sign
+in with your email, and you're ready to record or request your first
+order. While we're in pilot it's free, and your feedback shapes what we
+build next.
 
-**Form fields:** Name · Email · Phone (optional) · Country · City ·
-"I am a..." (Dressmaker/Tailor, Customer, Potential Partner, Other) ·
-Why are you interested? (optional)
+**Buttons:** I'm a dressmaker or tailor (goes to the app's dressmaker
+sign-in) · I'm a customer (goes to the app's customer sign-in)
 
-**CTA:** Join the Twonit pilot
-
-**Privacy note (shown on the form and again after submitting):**
-We'll only use this to reach out about the pilot — no spam, and your
-details aren't shared. (On the form it continues: "How we handle your
-details: Privacy Policy", linking to /privacy.)
-
-**Contact email shown:** hello@twonit.com
+**Under the buttons:** Free to use. You must be 18 or older. By signing
+up you agree to our Terms of Use and Privacy Policy.
 
 ---
 

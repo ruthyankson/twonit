@@ -11,6 +11,7 @@ export default function AudienceSection({
   body,
   benefits,
   cta,
+  ctaHref,
   imageLabel,
   image,
   imageSide,
@@ -22,6 +23,8 @@ export default function AudienceSection({
   body: string;
   benefits: string[];
   cta: string;
+  // Where the button goes: the app's sign-in for this side.
+  ctaHref: string;
   imageLabel: string;
   // A real image (screenshots of the app); without one, a labelled
   // placeholder shows instead.
@@ -74,7 +77,7 @@ export default function AudienceSection({
           </ul>
 
           <a
-            href="#pilot"
+            href={ctaHref}
             className="mt-8 inline-block rounded-full bg-plum-700 px-6 py-3 text-sm font-semibold text-cream-50 shadow-card transition hover:bg-plum-800"
           >
             {cta}

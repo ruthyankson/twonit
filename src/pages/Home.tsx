@@ -7,7 +7,7 @@ import ForArtisans from "../components/ForArtisans";
 import ForCustomers from "../components/ForCustomers";
 import Research from "../components/Research";
 import BeyondTailoring from "../components/BeyondTailoring";
-import Pilot from "../components/Pilot";
+import GetStarted from "../components/GetStarted";
 import About from "../components/About";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       <ForCustomers />
       <Research />
       <BeyondTailoring />
-      <Pilot />
+      <GetStarted />
       <About />
     </>
   );
