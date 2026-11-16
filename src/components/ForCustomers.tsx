@@ -11,6 +11,7 @@ export default function ForCustomers() {
       benefits={forCustomers.benefits}
       cta={forCustomers.cta}
       imageLabel="A customer reviewing and approving her order details on her phone"
+      image={forCustomers.image}
       imageSide="right"
       tint="peach"
     />

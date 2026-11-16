@@ -122,6 +122,11 @@ export const forArtisans = {
     "Get found by new customers in the Twonit dressmaker directory.",
   ],
   cta: "Join as an artisan",
+  image: {
+    jpg: "/images/artisans-app.jpg",
+    webp: "/images/artisans-app.webp",
+    alt: "Two phone screens from the Twonit app: a dressmaker's list of orders with their status and payment, and the dressmakers directory where customers find them.",
+  },
 };
 
 export const forCustomers = {
@@ -139,6 +144,11 @@ export const forCustomers = {
     "Keep a useful history of your custom orders over time.",
   ],
   cta: "Join as a customer",
+  image: {
+    jpg: "/images/customers-app.jpg",
+    webp: "/images/customers-app.webp",
+    alt: "Two phone screens from the Twonit app: a customer's home with orders in production and the balance owing, and the first step of requesting an order, choosing a dressmaker.",
+  },
 };
 
 export const research = {

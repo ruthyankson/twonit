@@ -44,11 +44,12 @@ before treating this as a finished, permanent launch site.
       commissions real photography of actual dressmakers and customers
       — that should replace it, since real photography of real users
       will always read as more credible than an illustrated stand-in.
-- [ ] **`<ImagePlaceholder />` slots** (founder is sending app screenshots) in `ForArtisans.tsx` and
-      `ForCustomers.tsx` are deliberately unfinished — dashed-border
-      placeholders, not real images. Replace with real photography or
-      commissioned illustration once available; see BRAND.md for the
-      visual direction those should follow.
+- [x] **For Artisans / For Customers images** are now real app
+      screenshots on phone frames (`public/images/artisans-app.*`,
+      `customers-app.*`), with customer names and social handles
+      blurred. Swap for fresh screenshots as the app changes, or for
+      real photography later; `ImagePlaceholder` still shows if an
+      image is ever removed.
 - [x] **Logo has no vector source.** ~~Resolved~~ — the founder's
       combined-artwork source file is now in the repo as inline SVG
       (`src/components/BrandLockup.tsx`), and Nav/Footer both render

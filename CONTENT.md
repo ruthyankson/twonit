@@ -140,6 +140,9 @@ especially a repeat customer's exact measurements.
 
 **CTA:** Join as an artisan
 
+**Image:** Two phone screens: a dressmaker's orders list and the
+dressmakers directory (names and handles blurred).
+
 ---
 
 ## For Customers
@@ -161,6 +164,9 @@ from the first measurement to the finished piece.
 - Keep a useful history of your custom orders over time.
 
 **CTA:** Join as a customer
+
+**Image:** Two phone screens: a customer's home and the first step of
+requesting an order.
 
 ---
 

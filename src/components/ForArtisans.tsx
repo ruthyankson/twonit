@@ -11,6 +11,7 @@ export default function ForArtisans() {
       benefits={forArtisans.benefits}
       cta={forArtisans.cta}
       imageLabel="A dressmaker reviewing an order record on a tablet at her workbench"
+      image={forArtisans.image}
       imageSide="left"
       tint="plum"
     />

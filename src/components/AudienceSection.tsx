@@ -12,6 +12,7 @@ export default function AudienceSection({
   benefits,
   cta,
   imageLabel,
+  image,
   imageSide,
   tint,
 }: {
@@ -22,6 +23,9 @@ export default function AudienceSection({
   benefits: string[];
   cta: string;
   imageLabel: string;
+  // A real image (screenshots of the app); without one, a labelled
+  // placeholder shows instead.
+  image?: { jpg: string; webp: string; alt: string };
   imageSide: "left" | "right";
   tint: "plum" | "peach";
 }) {
@@ -31,7 +35,22 @@ export default function AudienceSection({
     <section id={id} className="section-pad scroll-mt-16">
       <div className="container-page grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className={imageSide === "left" ? "lg:order-1" : "lg:order-2"}>
-          <ImagePlaceholder label={imageLabel} aspect="aspect-[4/3]" />
+          {image ? (
+            <picture>
+              <source srcSet={image.webp} type="image/webp" />
+              <img
+                src={image.jpg}
+                alt={image.alt}
+                width={1200}
+                height={900}
+                loading="lazy"
+                decoding="async"
+                className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
+              />
+            </picture>
+          ) : (
+            <ImagePlaceholder label={imageLabel} aspect="aspect-[4/3]" />
+          )}
         </div>
 
         <div className={imageSide === "left" ? "lg:order-2" : "lg:order-1"}>
