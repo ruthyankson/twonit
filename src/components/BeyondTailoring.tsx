@@ -26,10 +26,14 @@ export default function BeyondTailoring() {
             >
               {item.label}
               {item.status === "current" && (
+                <span className="sr-only"> (</span>
+              )}
+              {item.status === "current" && (
                 <span className="ml-2 rounded-full bg-cream-50/20 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide">
                   Today
                 </span>
               )}
+              {item.status === "current" && <span className="sr-only">)</span>}
             </li>
           ))}
         </ul>

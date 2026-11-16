@@ -5,6 +5,7 @@ import {
   CheckCircleIcon,
   FlagIcon,
   HistoryIcon,
+  PhoneCallIcon,
   RulerIcon,
   ScissorsIcon,
 } from "./icons";
@@ -89,7 +90,6 @@ export default function HowItWorks() {
                         look.dark ? "text-cream-50" : "text-plum-900"
                       }`}
                     >
-                      <span className="sr-only">Step {i + 1}: </span>
                       {step.title}
                     </h3>
                     <p
@@ -105,6 +105,39 @@ export default function HowItWorks() {
             );
           })}
         </ol>
+
+        {/* Step 3 up close: the phone call it replaces (this used to be
+            its own "No more calling" section). */}
+        <div className="mx-auto mt-14 grid max-w-5xl items-center gap-5 lg:mt-16 lg:grid-cols-[1.15fr_1fr_1fr]">
+          <div className="lg:pr-4">
+            <p className="eyebrow">{howItWorks.track.eyebrow}</p>
+            <h3 className="mt-2 text-2xl font-semibold leading-snug text-plum-900">
+              {howItWorks.track.headline}
+            </h3>
+          </div>
+          <div className="rounded-2xl border border-plum-100 bg-white p-5">
+            <div className="flex items-center gap-2.5">
+              <PhoneCallIcon className="h-6 w-6 text-ink-500" />
+              <p className="text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-500">
+                {howItWorks.track.before.label}
+              </p>
+            </div>
+            <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-700">
+              {howItWorks.track.before.text}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-sage-500/30 bg-sage-100 p-5 shadow-card">
+            <div className="flex items-center gap-2.5">
+              <CheckCircleIcon className="h-6 w-6 text-sage-700" />
+              <p className="text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-sage-700">
+                {howItWorks.track.after.label}
+              </p>
+            </div>
+            <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-700">
+              {howItWorks.track.after.text}
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

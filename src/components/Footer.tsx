@@ -2,30 +2,6 @@ import { Link } from "react-router-dom";
 import { footer } from "../content/copy";
 import { LogoOnDark } from "./Logo";
 
-// Decorative, inert placeholders -- intentionally not <a> tags, since
-// there's nowhere real for them to go yet (see TODO.md). Grouped under
-// one labelled, non-interactive region rather than left as dead links.
-function SocialPlaceholders() {
-  const marks = ["X", "IG", "in"];
-  return (
-    <div>
-      <p className="text-xs font-medium uppercase tracking-wide text-cream-50/50">
-        {footer.socialPlaceholderNote}
-      </p>
-      <div className="mt-3 flex gap-2" aria-hidden="true">
-        {marks.map((m) => (
-          <span
-            key={m}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-cream-50/15 text-xs font-semibold text-cream-50/40"
-          >
-            {m}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 export default function Footer() {
   return (
     <footer className="bg-plum-900 text-cream-50">
@@ -35,9 +11,6 @@ export default function Footer() {
           <p className="mt-3 max-w-[16rem] text-sm text-cream-50/70">
             {footer.tagline}
           </p>
-          <div className="mt-6">
-            <SocialPlaceholders />
-          </div>
         </div>
 
         {footer.columns.map((col) => (

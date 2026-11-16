@@ -96,11 +96,10 @@ before treating this as a finished, permanent launch site.
       `CONTENT.md`) — if/when a larger or more rigorous study is done,
       update `src/content/copy.ts`'s `research` object and keep that
       labeling honest rather than letting the caveat quietly drop off.
-- [ ] **Social links are placeholders** (footer icons marked "Social
-      accounts coming soon," not linked anywhere). Add real profile
-      URLs to `Footer.tsx`'s `SocialPlaceholders` once accounts exist,
-      and turn the `<span>` placeholders into real `<a>` links at that
-      point.
+- [ ] **No social links yet.** The footer's "coming soon" placeholder
+      icons were removed so nothing looks unfinished. Once the accounts
+      exist, add real links (with icons) under the footer tagline in
+      `Footer.tsx`.
 
 ## Explicitly out of scope for this pass (by design, not oversight)
 

@@ -31,17 +31,13 @@ export default function Research() {
           <h3 className="text-base font-semibold text-plum-900">
             {research.dressmakerFindings.heading}
           </h3>
-          <ul className="mt-4 grid gap-x-8 gap-y-2 sm:grid-cols-2">
-            {research.dressmakerFindings.items.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-2.5 text-sm text-ink-700"
-              >
-                <span
-                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-peach-500"
-                  aria-hidden="true"
-                />
-                {item}
+          <ul className="mt-5 grid gap-5 sm:grid-cols-3">
+            {research.dressmakerFindings.themes.map((theme) => (
+              <li key={theme.title} className="border-l-2 border-peach-500 pl-4">
+                <p className="font-semibold text-plum-900">{theme.title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-ink-700">
+                  {theme.text}
+                </p>
               </li>
             ))}
           </ul>

@@ -28,10 +28,9 @@ first mention in a section, and link previews. After that, plain
 
 **Headline:** Get custom work right — together.
 
-**Body:** Twonit gives customers and artisans one shared place to record
-measurements, approve specifications, and follow a garment order from
-first conversation to finished piece — so nothing gets lost between a
-notebook, a WhatsApp chat, and memory.
+**Body:** Twonit brings customers and artisans into one shared workspace
+to record requirements, confirm specifications, manage changes and track
+custom garment orders from start to finish.
 
 **Primary CTA:** Get started free (goes to app.twonit.com)
 **Secondary CTA:** See how it works
@@ -51,22 +50,15 @@ through a handshake. (Real asset — see TODO.md for provenance.)
 
 **Headline:** Garment orders shouldn't depend on memory.
 
-**Body:**
-> Right now, the details of a custom garment order live in a lot of places at
-> once: a notebook on the sewing table, a WhatsApp thread, a handful of
-> voice notes, photos buried in a camera roll, and whatever both people
-> remember from the first conversation.
->
-> When a measurement, a fabric choice, or a promised delivery date only
-> exists in one of those places — or only in someone's memory — it's
-> easy for it to get lost, misremembered, or quietly changed along the
-> way. That's how a customer ends up with something they didn't ask
-> for, and how an artisan ends up redoing work they already did once.
+**Body:** Custom orders often begin with conversations, handwritten
+notes, reference photos and messages scattered across different places.
+When a detail is missing, misunderstood or changed without confirmation,
+the result is wasted materials, costly rework, late delivery and
+disappointed customers.
 
 **Diagram:** "Where order details live today": Notebooks · WhatsApp &
 voice notes · Photo galleries · Conversations · Memory → "With Twonit":
-**One shared record** — Measurements, styles, approvals and payments,
-seen by both of you.
+**One shared record** — Requirements · Approvals · Changes · Progress
 
 ---
 
@@ -78,9 +70,17 @@ seen by both of you.
 Shown as a staircase, one step per stage, each a little higher:
 
 1. **01 — Capture.** Sizes, style and photos, recorded once.
-2. **02 — Confirm.** The customer approves before anything is cut.
-3. **03 — Create.** Both of you follow each stage as it's made.
-4. **04 — Keep.** Saved and ready for the next order.
+2. **02 — Confirm.** The customer approves before work begins.
+3. **03 — Track.** Both of you follow each stage as it's made.
+4. **04 — Reuse.** Measurements and history, ready for next time.
+
+**Step 3, up close** (under the staircase; this used to be its own "No
+more calling" section):
+**Headline:** A stage update shouldn't cost either of you a phone call.
+- **The old way:** Stop work, call, and repeat the same update, maybe
+  more than once.
+- **With Twonit:** Move the order to its next stage. Your customer sees
+  the update, with no call needed.
 
 ---
 
@@ -89,10 +89,10 @@ Shown as a staircase, one step per stage, each a little higher:
 **Eyebrow:** Why Twonit
 **Headline:** One order. Two sides. One shared truth.
 
-**Body:** Twonit isn't just another order-management tool. Its core
-value is simple: it creates one agreed record between two people,
-instead of two separate versions of the same order living in two
-separate heads.
+**Body:** Every custom order has details both sides need to agree on.
+Twonit turns them into one shared record you can both review, so you
+can see what was requested, what was approved, what changed and what
+happens next.
 
 **Conceptual interface mockup shows:**
 - Order name: "Kaba & slit — Ama's order"
@@ -106,43 +106,21 @@ separate heads.
 
 ---
 
-## No more calling to check in
-
-**Eyebrow:** No more calling to check in
-**Headline:** A stage update shouldn't cost either of you a phone call.
-
-**Body:** Dressmakers are busy — stopping mid-fitting to explain
-"still cutting, ready Thursday" out loud, to the same customer, more
-than once, adds up. And customers don't love feeling like they're
-bothering someone just by checking in. Twonit replaces the call with a
-tap.
-
-**Before / after shown side by side:**
-- **The old way:** Stop what you're doing, call, and repeat the same
-  update out loud — maybe more than once.
-- **With Twonit:** Move the order to its next stage. Your customer
-  sees it — and gets notified — instantly.
-
----
-
 ## For Artisans
 
 **Eyebrow:** For Artisans
 **Headline:** Never ask "what was her measurement again?" twice.
 
 **Body:** Twonit helps dressmakers and tailors keep hold of the details
-that are easiest to lose — and hardest to reconstruct after the fact,
-especially a repeat customer's exact measurements.
+that are easiest to lose, especially a repeat customer's exact
+measurements.
 
 **Benefits:**
-- Pull up a repeat customer's saved measurements instantly — no notebook, no re-asking.
-- Start each order from the right measurement list for the garment, for women, men and children.
-- Take on new garments and alterations or repairs, each with its own steps.
-- Document exactly what a customer approved, and when — with every change tracked.
-- Move an order to its next stage with one tap — your customer's notified automatically, no call needed.
-- Record several garments from one visit together, with one combined payment record.
-- Track deposits and balances, and show customers how to pay you by mobile money, bank transfer or cash.
-- Get found by new customers in the Twonit dressmaker directory.
+- Pull up a repeat customer's measurements and past orders in seconds.
+- Keep each garment's specifications, photos and requirements together.
+- Record what the customer approved, with every change tracked.
+- Move an order to its next stage, and your customer sees the update.
+- Track deposits and balances, and show customers how to pay you.
 
 **CTA:** Start as a dressmaker (goes to the app's dressmaker sign-in)
 
@@ -156,18 +134,16 @@ dressmakers directory (names and handles blurred).
 **Eyebrow:** For Customers
 **Headline:** Know exactly what you're getting, before it's made.
 
-**Body:** Twonit gives customers real visibility into a custom garment order —
-from the first measurement to the finished piece.
+**Body:** Twonit gives customers real visibility into a custom garment
+order, from the first measurement to the finished piece.
 
 **Benefits:**
-- See exactly what's been recorded about your order, in plain language.
-- Approve your measurements and the design before work begins on your piece.
-- Request changes clearly, instead of over a string of messages.
-- Know the moment your order moves to its next stage — no need to call and ask.
-- Save measurements for yourself and your family, and reuse them on every order.
-- See what you've paid, what's left, and exactly how to pay your dressmaker.
-- Find a dressmaker by what they make, and request an order directly.
-- Keep a useful history of your custom orders over time.
+- Review your measurements, design and order details in plain language.
+- Approve the specifications before work begins.
+- Request changes, with every revision kept on record.
+- Follow your order's progress without having to call.
+- Reuse saved measurements for you and your family, and look back on
+  past orders.
 
 **CTA:** Start as a customer (goes to the app's customer sign-in)
 
@@ -176,15 +152,13 @@ requesting an order.
 
 ---
 
-## Why we're building it (early research)
+## What we learned (early research)
 
-**Eyebrow:** Why we're building it
+**Eyebrow:** What we learned
 **Headline:** This started with listening, not guessing.
 
-**Intro:** Before writing any code, we ran an early, exploratory round
-of research with the customers and dressmakers who'd actually use this.
-The sample is small and the findings are directional, not a market
-study — but they're what convinced us this problem is real.
+**Intro:** Before writing any code, we asked the customers and
+dressmakers who'd use Twonit how custom orders go wrong today.
 
 **Stats:**
 - **100%** of customers surveyed said their dressmaker currently
@@ -197,19 +171,16 @@ study — but they're what convinced us this problem is real.
   description before sewing begins.
 
 **Dressmakers described the same problem from the other side:**
-- Measurements that are difficult to find when they're needed again
-- Incomplete or unclear style details
-- Forgotten requirements
-- Reference images that are hard to locate later
-- Specifications that change without a clear record
-- Disagreement over what was originally requested
-- Remakes caused by a misunderstanding, not a mistake in the sewing
-- Wasted materials and lost customer trust
+- **Scattered records.** Measurements, reference images and
+  specifications are hard to find again.
+- **Unclear agreements.** Requirements and changes aren't consistently
+  written down or approved.
+- **Costly consequences.** Misunderstandings lead to remakes, wasted
+  materials and lost customer trust.
 
-**Disclaimer (always shown alongside the stats):** Early exploratory
-customer research. This was a small, early-stage sample intended to
-test our assumptions — not a statistically representative study of the
-wider market.
+**Note (shown once, under the findings):** Early exploratory research
+with a small sample. The findings are directional, not representative
+of the wider market.
 
 ---
 
@@ -255,19 +226,13 @@ up you agree to our Terms of Use and Privacy Policy.
 **Headline:** Why Twonit exists.
 
 **Body:**
-> Twonit started with a simple observation: a lot of friction in custom
-> work has nothing to do with skill. It comes from two people not being
-> completely sure they agreed on the same thing.
+> Twonit was created around a simple belief: custom work should be
+> built on shared understanding, not assumptions.
 >
-> We're building Twonit to close that gap — starting with dressmakers,
-> tailors, and the customers who work with them, because it's a place
-> where the cost of a misunderstanding is especially high: a remade
-> garment, wasted fabric, a missed deadline, a customer who doesn't
-> come back.
->
-> The goal isn't to replace the relationship between an artisan and
-> their customer. It's to give that relationship a shared, reliable
-> record to stand on.
+> We're starting with tailoring because even small misunderstandings
+> there have costly consequences for artisans and customers. Our
+> long-term vision is to make collaboration clearer and more reliable
+> wherever people commission custom work.
 
 ---
 
@@ -280,8 +245,7 @@ up you agree to our Terms of Use and Privacy Policy.
 - Company — About · Contact
 - Legal — Privacy · Terms
 
-**Social:** placeholder icons only, labeled "Social accounts coming
-soon" — not linked anywhere (see TODO.md).
+**Social:** hidden until the accounts exist (see TODO.md).
 
 ---
 
