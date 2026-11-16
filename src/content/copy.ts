@@ -30,7 +30,7 @@ export const appLinks = {
 export const hero = {
   eyebrow: "Open to dressmakers, tailors & customers everywhere",
   headline: "Get custom work right — together.",
-  body: "Twonit gives customers and artisans one shared place to record measurements, approve specifications, and follow an order from first conversation to finished piece — so nothing gets lost between a notebook, a WhatsApp chat, and memory.",
+  body: "Twonit gives customers and artisans one shared place to record measurements, approve specifications, and follow a garment order from first conversation to finished piece — so nothing gets lost between a notebook, a WhatsApp chat, and memory.",
   primaryCta: "Get started free",
   primaryHref: "https://app.twonit.com",
   secondaryCta: "See how it works",
@@ -43,9 +43,9 @@ export const hero = {
 
 export const problem = {
   eyebrow: "The problem",
-  headline: "Custom orders shouldn't depend on memory.",
+  headline: "Garment orders shouldn't depend on memory.",
   body: [
-    "Right now, the details of a custom order live in a lot of places at once: a notebook on the sewing table, a WhatsApp thread, a handful of voice notes, photos buried in a camera roll, and whatever both people remember from the first conversation.",
+    "Right now, the details of a custom garment order live in a lot of places at once: a notebook on the sewing table, a WhatsApp thread, a handful of voice notes, photos buried in a camera roll, and whatever both people remember from the first conversation.",
     "When a measurement, a fabric choice, or a promised delivery date only exists in one of those places — or only in someone's memory — it's easy for it to get lost, misremembered, or quietly changed along the way. That's how a customer ends up with something they didn't ask for, and how an artisan ends up redoing work they already did once.",
   ],
   convergingSources: [
@@ -63,7 +63,7 @@ export const problem = {
 
 export const howItWorks = {
   eyebrow: "How Twonit works",
-  headline: "Four steps, one shared order.",
+  headline: "Four steps, one shared garment order.",
   // Drawn as a staircase; keep each line short enough to take in at a
   // glance (one line on a phone, two at most on a wide screen).
   steps: [
@@ -150,7 +150,7 @@ export const forArtisans = {
 export const forCustomers = {
   eyebrow: "For Customers",
   headline: "Know exactly what you're getting, before it's made.",
-  body: "Twonit gives customers real visibility into a custom order — from the first measurement to the finished piece.",
+  body: "Twonit gives customers real visibility into a custom garment order — from the first measurement to the finished piece.",
   benefits: [
     "See exactly what's been recorded about your order, in plain language.",
     "Approve your measurements and the design before work begins on your piece.",
@@ -227,7 +227,7 @@ export const beyondTailoring = {
 export const getStarted = {
   eyebrow: "Get started",
   headline: "Try Twonit today — it's free.",
-  body: "Twonit opens in your phone's browser, wherever you are. Sign in with your email, and you're ready to record or request your first order. While we're in pilot it's free, and your feedback shapes what we build next.",
+  body: "Twonit opens in your phone's browser, wherever you are. Sign in with your email, and you're ready to record or request your first garment order. While we're in pilot it's free, and your feedback shapes what we build next.",
   dressmakerCta: "I'm a dressmaker or tailor",
   customerCta: "I'm a customer",
   // Under the buttons, before the Terms / Privacy links.
@@ -285,5 +285,5 @@ export const legal = {
 export const seo = {
   title: "Twonit | Get Custom Work Right Together",
   description:
-    "Twonit gives customers and artisans one shared place to agree on custom-order requirements, approvals, revisions and progress.",
+    "Twonit gives customers and artisans one shared place to agree on custom garment orders: measurements, approvals, changes and progress.",
 };
