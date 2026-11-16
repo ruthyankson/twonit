@@ -7,14 +7,15 @@ before treating this as a finished, permanent launch site.
 
 ## Backend / data
 
-- [ ] **Pilot form has no backend.** It validates and holds form state
-      in memory only; nothing submitted through it is currently saved
-      anywhere. See README.md's "Connecting the pilot form to a real
-      backend later" section for the two suggested options (Supabase,
-      matching the main product's backend, or Formspree for zero
-      backend code). Update `pilot.fallbackNote` in `src/content/copy.ts`
-      once this is wired up — that copy currently warns visitors it
-      isn't.
+- [x] **Pilot form has no backend.** ~~Resolved~~ — it now submits to
+      Supabase (same project as the main product) via a
+      `submit_pilot_signup` RPC; see README.md's "Pilot form backend"
+      section. Two things still need doing before this actually works
+      live: run `application/supabase/migration_032_pilot_signups.sql`
+      in the Supabase SQL editor, and set `VITE_SUPABASE_URL` /
+      `VITE_SUPABASE_ANON_KEY` as GitHub Actions repo secrets. Until
+      both are done, the deployed form silently falls back to its old
+      not-saved behavior rather than erroring.
 - [ ] **`hello@twonit.com` isn't a real inbox yet.** Set it up (or
       replace it with whatever address you do want to use) before
       relying on it anywhere public. It currently appears in

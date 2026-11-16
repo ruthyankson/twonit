@@ -1,21 +1,52 @@
 import { useId, useState, type FormEvent } from "react";
 import { pilot } from "../content/copy";
+import { supabase, supabaseConfigured } from "../lib/supabase";
 
-type Status = "idle" | "submitted";
+type Status = "idle" | "submitting" | "submitted";
 
-// Honest handling of a form with no backend behind it yet: we validate
-// and hold the entered values in memory, but we never claim the
-// submission was saved anywhere -- see pilot.fallbackNote and TODO.md
-// for what wiring this up to Supabase or Formspree later looks like.
+// Submits straight to Supabase (see lib/supabase.ts) via the
+// submit_pilot_signup() RPC -- see README.md's "Pilot form backend"
+// section for why a static, backend-less site can still do this safely.
+// If the site was built without the Supabase env vars configured (e.g.
+// a local checkout that hasn't set up .env.local yet), this falls back
+// to the old honest "not saved" behavior rather than crashing.
 export default function Pilot() {
   const [status, setStatus] = useState<Status>("idle");
   const [name, setName] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const formId = useId();
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError(null);
     const data = new FormData(e.currentTarget);
-    setName(String(data.get("name") ?? "").trim());
+    const enteredName = String(data.get("name") ?? "").trim();
+    setName(enteredName);
+
+    if (!supabaseConfigured || !supabase) {
+      setStatus("submitted");
+      return;
+    }
+
+    setStatus("submitting");
+    const { error: rpcError } = await supabase.rpc("submit_pilot_signup", {
+      p_name: enteredName,
+      p_email: String(data.get("email") ?? "").trim(),
+      p_phone: String(data.get("phone") ?? "").trim(),
+      p_country: String(data.get("country") ?? "").trim(),
+      p_city: String(data.get("city") ?? "").trim(),
+      p_role: String(data.get("role") ?? "").trim(),
+      p_why: String(data.get("why") ?? "").trim(),
+    });
+
+    if (rpcError) {
+      setError(
+        "Something went wrong sending that -- please try again, or reach us directly below."
+      );
+      setStatus("idle");
+      return;
+    }
+
     setStatus("submitted");
   }
 
@@ -134,14 +165,19 @@ export default function Pilot() {
 
               <button
                 type="submit"
-                className="mt-6 w-full rounded-full bg-plum-700 px-6 py-3.5 text-base font-semibold text-cream-50 shadow-card transition hover:bg-plum-800 sm:w-auto"
+                disabled={status === "submitting"}
+                className="mt-6 w-full rounded-full bg-plum-700 px-6 py-3.5 text-base font-semibold text-cream-50 shadow-card transition hover:bg-plum-800 disabled:opacity-60 sm:w-auto"
               >
-                {pilot.cta}
+                {status === "submitting" ? "Sending…" : pilot.cta}
               </button>
 
-              <p className="mt-4 text-xs leading-relaxed text-ink-500">
-                {pilot.fallbackNote}
-              </p>
+              {error ? (
+                <p className="mt-4 text-xs leading-relaxed text-red-600">{error}</p>
+              ) : (
+                <p className="mt-4 text-xs leading-relaxed text-ink-500">
+                  {pilot.fallbackNote}
+                </p>
+              )}
             </form>
           )}
         </div>

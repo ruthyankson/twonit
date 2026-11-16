@@ -203,7 +203,7 @@ export const pilot = {
     "Other",
   ],
   fallbackNote:
-    "This form isn't connected to a live signup service yet. See TODO.md for wiring it to Supabase or Formspree — until then, submissions here aren't saved anywhere.",
+    "We'll only use this to reach out about the pilot — no spam, and your details aren't shared.",
   fallbackEmail: "hello@twonit.com",
 };
 

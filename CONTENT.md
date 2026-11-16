@@ -232,10 +232,9 @@ Why are you interested? (optional)
 
 **CTA:** Join the Twonit pilot
 
-**No-backend note (shown on the form and again after submitting):**
-This form isn't connected to a live signup service yet. See TODO.md for
-wiring it to Supabase or Formspree — until then, submissions here
-aren't saved anywhere.
+**Privacy note (shown on the form and again after submitting):**
+We'll only use this to reach out about the pilot — no spam, and your
+details aren't shared.
 
 **Fallback contact email shown:** hello@twonit.com *(placeholder — see TODO.md)*
 
